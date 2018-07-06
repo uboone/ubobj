@@ -44,10 +44,11 @@ cet_report_compiler_flags()
 find_ups_product( larcorealg )
 find_ups_product( larcoreobj )
 find_ups_product( lardataobj )
-find_ups_product( cetbuildtools v3_10_00 )
+find_ups_product( cetbuildtools )
 find_ups_boost( v1_53_0 )
 find_ups_product( canvas )
 find_ups_product( artdaq_core v1_00_00 )
+find_ups_product( nusimdata )
 
 # macros for dictionary and simple_plugin
 include(ArtDictionary)
