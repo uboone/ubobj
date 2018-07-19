@@ -11,7 +11,8 @@
    <version ClassVersion="10" checksum="1103224008"/>
   </class>
 
-  <class name="raw::DAQHeaderTimeUBooNE" ClassVersion="11">
+  <class name="raw::DAQHeaderTimeUBooNE" ClassVersion="12">
+   <version ClassVersion="12" checksum="1300284975"/>
    <version ClassVersion="11" checksum="30000112"/>
    <version ClassVersion="10" checksum="1"/>
   </class>
