@@ -25,6 +25,7 @@ void UBXSecEvent::Init()
   run = _default_value;
   subrun = _default_value;
   event = _default_value;
+  file_type = "not_set";
   muon_is_reco = false;
   muon_reco_pur = _default_value;
   muon_reco_eff = _default_value;
@@ -50,6 +51,7 @@ void UBXSecEvent::Init()
   genie_mult_ch = _default_value;
   bnb_weight = _default_value;
   is_selected = false;
+  selected_slice = _default_value;
 
   sce_corr_x = _default_value;
   sce_corr_y = _default_value;
@@ -181,6 +183,14 @@ void UBXSecEvent::ResetGenieEventWeightVectorsMultisim() {
   evtwgt_genie_multisim_funcname.clear();
   evtwgt_genie_multisim_weight.clear();
   evtwgt_genie_multisim_nweight.clear();
+
+}
+
+void UBXSecEvent::ResetGenieModelsEventWeightVectorsMultisim() {
+
+  evtwgt_genie_models_multisim_funcname.clear();
+  evtwgt_genie_models_multisim_weight.clear();
+  evtwgt_genie_models_multisim_nweight.clear();
 
 }
 
