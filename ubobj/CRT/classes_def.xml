@@ -7,7 +7,8 @@
 
 <lcgdict>
 
-  <class name="crt::CRTSimData" ClassVersion="10">
+  <class name="crt::CRTSimData" ClassVersion="11">
+   <version ClassVersion="11" checksum="60666446"/>
     <version ClassVersion="10" checksum="3886338717"/>
   </class>
   
