@@ -7,7 +7,8 @@
 
 <lcgdict>
 
-  <class name="uboone::UbooneOpticalFilter" ClassVersion="10">
+  <class name="uboone::UbooneOpticalFilter" ClassVersion="11">
+   <version ClassVersion="11" checksum="1723222904"/>
    <version ClassVersion="10" checksum="4104666675"/>
   </class>
   
