@@ -61,6 +61,7 @@ namespace ubana {
     void SetOrigin(ubana::TPCObjectOrigin);
     void SetOriginExtra(ubana::TPCObjectOriginExtra);
     void SetMultiplicity(int pfpMult, int trackMult, int showerMult);
+//    void SetTrackScore(std::vector<double> pfpscore);
 
     // Getter methods
     const std::vector<recob::Track>      & GetTracks()      const;
@@ -72,6 +73,7 @@ namespace ubana {
     const size_t                           GetNShowers()    const;
     const size_t                           GetNPFP()        const;
     const void                             GetMultiplicity(int &, int &, int &) const;
+  //  const void                             GetTrackScore(std::Vector<double> &) const;
     const int                              GetNTracksCloseToVertex(double)      const;
 
   private:
@@ -85,6 +87,7 @@ namespace ubana {
     int                            fPfpMult;
     int                            fTrackMult;
     int                            fShowerMult;
+ //  std::vector<double>            fPfpScore;
  };
 }
 

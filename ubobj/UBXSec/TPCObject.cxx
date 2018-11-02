@@ -18,6 +18,7 @@ namespace ubana {
   void TPCObject::SetOrigin      (ubana::TPCObjectOrigin origin)       { this->fOrigin = origin;    }
   void TPCObject::SetOriginExtra (ubana::TPCObjectOriginExtra origin)  { this->fOriginExtra = origin;    }
   void TPCObject::SetMultiplicity(int p, int t, int s)                 { this->fPfpMult = p; this->fTrackMult = t; this->fShowerMult = s;}
+// void TPCObject::SetTrackScore(std::vector<double> score)                 { this->fPfpScore = score;}
 
   // Getter methods
   const std::vector<recob::Track>       & TPCObject::GetTracks()      const { return this->fTracks;      }
@@ -32,6 +33,7 @@ namespace ubana {
   const size_t TPCObject::GetNShowers() const { return (this->fShowers).size();     }
 
   const void TPCObject::GetMultiplicity(int &p, int &t, int &s) const { p = this->fPfpMult; t = this->fTrackMult; s = this->fShowerMult;}
+// const void TPCObject::GetTrackScore(std::vector<double> &score) const { score = this->fPfpScore;}
 
   const int  TPCObject::GetNTracksCloseToVertex(double tolerance) const {
 
