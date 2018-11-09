@@ -13,6 +13,13 @@
 #include "ubobj/CRT/CRTHit.hh"
 #include "ubobj/CRT/CRTTrack.hh"
 #include "ubobj/CRT/CRTTzero.hh"
+#include "lardataobj/RecoBase/Track.h"
+#include "lardataobj/RecoBase/Hit.h"
+#include "lardataobj/AnalysisBase/T0.h"
+#include "lardataobj/AnalysisBase/CosmicTag.h"
+#include "lardataobj/AnalysisBase/Calorimetry.h"
+#include "lardataobj/MCBase/MCTrack.h"
+#include "lardataobj/RecoBase/OpFlash.h"
 #include "canvas/Persistency/Common/Assns.h"
 ////#include "MSetCRTFrag.hh"
 #include <utility>
@@ -40,12 +47,26 @@ template class art::Wrapper< std::vector<crt::CRTTzero> >;
 template class std::vector<crt::CRTTrack>;
 template class art::Wrapper< std::vector<crt::CRTTrack> >;
 
+//template class std::vector< anab::T0 >;
+//template class art::Wrapper< std::vector< anab::T0 >  >;
+
+
 //template class std::pair< art::Ptr<crt::CRTTzero>,        art::Ptr<crt::CRTHit>    >;
 //template class std::pair< art::Ptr<crt::CRTHit>,        art::Ptr<crt::CRTTzero>    >;
 template class art::Assns<crt::CRTTzero,crt::CRTHit, void>;
 template class art::Assns<crt::CRTHit,crt::CRTTzero, void>;
 template class art::Wrapper<art::Assns<crt::CRTTzero,crt::CRTHit, void> >;
 template class art::Wrapper<art::Assns<crt::CRTHit,crt::CRTTzero, void> >;
+
+
+template class art::Assns<recob::Track,crt::CRTTrack>;
+template class art::Wrapper< art::Assns<recob::Track,crt::CRTTrack>  >;
+
+template class art::Assns<crt::CRTTrack,recob::Track>;
+template class art::Wrapper< art::Assns<crt::CRTTrack,recob::Track>  >;
+
+
+
 
 ////template class std::vector<crt::MSetCRTFrag>;
 ////template class art::Wrapper< std::vector<crt::MSetCRTFrag> >;
