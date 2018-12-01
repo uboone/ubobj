@@ -48,6 +48,8 @@ class UBXSecEvent /*: public TObject*/{
   Int_t           n_primary_cosmic_pfp; ///< Number of primary PFP in the event from pandoraCosmic (primaries before the removal)
   Int_t           nPFPtagged; ///< Not used
   Int_t           muon_is_flash_tagged; ///< Not used
+vector<double> pfp_trackscore;
+vector<double> pfp_chi2_proton;
   Double_t        muon_tag_score; ///< Not used
   Double_t        fm_score; ///< Not used
   Int_t           fv; ///< Is 1 if the true neutrino vertex is in the fiducial volume
