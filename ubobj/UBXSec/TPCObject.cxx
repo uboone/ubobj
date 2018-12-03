@@ -46,17 +46,15 @@ namespace ubana {
     int multiplicity = 0;
 
     // Vertex
-    double v[3];
-    this->fVertex.XYZ(v);
-    TVector3 vtx(v[0], v[1], v[2]);
+    const auto& vtx = this->fVertex.position();
 
     // Loop over tracks and calulate multiplicity
     for (auto t : this->fTracks) {
       
-      TVector3 start = t.Vertex();
-      TVector3 end = t.End();
+      const auto& start = t.Vertex();
+      const auto& end = t.End();
 
-      if ( (vtx-start).Mag() < tolerance   ||   (vtx-end).Mag() < tolerance ) {
+      if ( (vtx-start).R() < tolerance   ||   (vtx-end).R() < tolerance ) {
         multiplicity++;
       }
     }
