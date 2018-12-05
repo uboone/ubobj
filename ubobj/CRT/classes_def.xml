@@ -7,7 +7,8 @@
 
 <lcgdict>
 
-  <class name="crt::CRTSimData" ClassVersion="10">
+  <class name="crt::CRTSimData" ClassVersion="11">
+   <version ClassVersion="11" checksum="60666446"/>
     <version ClassVersion="10" checksum="3886338717"/>
   </class>
   
@@ -55,6 +56,14 @@
   <class name="std::vector<crt::CRTTzero>"/>
   <class name="art::Wrapper< std::vector<crt::CRTTzero> >"/>
 
+  <!--class name="anab::T0" ClassVersion="14">
+   <version ClassVersion="14" checksum="412722420"/>
+   <version ClassVersion="13" checksum="145047750"/>
+  </class-->
+
+  <!--class name="std::vector<anab::T0>"/>
+  <claEss name="art::Wrapper< std::vector<anab::T0> >"/-->
+
 
  <!-- associations  -->
 
@@ -70,6 +79,13 @@
  <class name="art::Assns<art::Ptr<crt::CRTTzero>, art::Ptr<crt::CRTHit>,    void>"           />
 
 -->
+
+<class name="art::Assns<recob::Track,crt::CRTTrack>"           />
+<class name="art::Wrapper< art::Assns<recob::Track,crt::CRTTrack> >"           />
+
+<class name="art::Assns<crt::CRTTrack,recob::Track>"           />
+<class name="art::Wrapper< art::Assns<crt::CRTTrack,recob::Track> >"           />
+
 
 <!--
   <class name="crt::MSetCRTFrag" ClassVersion="11">
