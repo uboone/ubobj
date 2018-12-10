@@ -33,6 +33,20 @@ void UBXSecEvent::Init()
   true_muon_mom_matched = _default_value;
   n_pfp = _default_value;
   n_pfp_primary = _default_value;
+  n_pfp_flash_tagged= _default_value;  
+  nu_pfp_flash_tagged= _default_value;
+  n_pfp_geo_tagged= _default_value;   
+  nu_pfp_geo_tagged= _default_value;  
+  n_pfp_acpt_tagged= _default_value;  
+  nu_pfp_acpt_tagged= _default_value; 
+  n_pfp_stopmu_tagged= _default_value; 
+  nu_pfp_stopmu_tagged= _default_value;
+  nu_pfp_tagged_total= _default_value; 
+  geo_flash_incommon= _default_value;  
+  acpt_flash_incommon= _default_value;
+  acpt_geo_incommon= _default_value; 
+//pfp_trackscore=_default_value;
+//pfp_chi2_proton=_default_value;
   n_primary_cosmic_pfp = _default_value;
   nPFPtagged = _default_value;
   muon_is_flash_tagged = _default_value;
@@ -158,7 +172,9 @@ void UBXSecEvent::ResizeVectors(int vsize) {
   slc_mult_track_tolerance.resize(vsize, _default_value);
   slc_geocosmictag.resize(vsize, false);
   slc_consistency.resize(vsize, true);
-  slc_consistency_score.resize(vsize, 0.);
+ pfp_trackscore.resize(vsize,-1.);
+pfp_chi2_proton.resize(vsize,-1.);
+ slc_consistency_score.resize(vsize, 0.);
 }
 
 void UBXSecEvent::ResizeGenieTruthVectors(int vsize) {
