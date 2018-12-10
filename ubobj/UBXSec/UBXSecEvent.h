@@ -46,8 +46,22 @@ class UBXSecEvent /*: public TObject*/{
   Int_t           n_pfp; ///< Number of PFP in the event
   Int_t           n_pfp_primary; ///< Number of primary PFP in the event (neutrino PFP)
   Int_t           n_primary_cosmic_pfp; ///< Number of primary PFP in the event from pandoraCosmic (primaries before the removal)
+  Int_t n_pfp_flash_tagged;   ///< Number of PFP tagged by the Flash Tagger algo
+  Int_t nu_pfp_flash_tagged;  ///< Number of neutrino origin PFP tagged by the Flash Tagger algo 
+  Int_t n_pfp_geo_tagged;     ///< Number of PFP tagged by the Geo Tagger algo
+  Int_t nu_pfp_geo_tagged;    ///< Number of neutrino origin PFP tagged by the Geo Tagger algo
+  Int_t n_pfp_acpt_tagged;    ///< Number of PFP tagged by the ACPT Tagger algo
+  Int_t nu_pfp_acpt_tagged;   ///< Number of neutrino origin PFP tagged by the ACPT Tagger algo
+  Int_t n_pfp_stopmu_tagged;  ///< Number of PFP tagged by the ACPT Tagger algo
+  Int_t nu_pfp_stopmu_tagged; ///< Number of neutrino origin PFP tagged by the ACPT Tagger algo
+  Int_t nu_pfp_tagged_total;  ///< Number of neutrino origin PFP tagged in total
+  Int_t geo_flash_incommon;   ///< Number of tagged PFP in common between Geo and Flash Tagger algo
+  Int_t acpt_flash_incommon;  ///< Number of tagged PFP in common between ACPT and Flash Tagger algo
+  Int_t acpt_geo_incommon;    ///< Number of tagged PFP in common between ACPT and Geo Tagger algo
   Int_t           nPFPtagged; ///< Not used
   Int_t           muon_is_flash_tagged; ///< Not used
+vector<double> pfp_trackscore;
+vector<double> pfp_chi2_proton;
   Double_t        muon_tag_score; ///< Not used
   Double_t        fm_score; ///< Not used
   Int_t           fv; ///< Is 1 if the true neutrino vertex is in the fiducial volume
