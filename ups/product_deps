@@ -33,7 +33,7 @@ lardataalg              v08_00_00
 lardataobj              v08_00_00
 larcorealg              v08_00_00
 artdaq_core             v3_04_01
-cetbuildtools	        v7_04_00	-	only_for_build
+cetbuildtools	        v7_06_03	-	only_for_build
 end_product_list
 
 qualifier      lardataobj     larcorealg     artdaq_core      lardataalg   
