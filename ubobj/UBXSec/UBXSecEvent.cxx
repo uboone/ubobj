@@ -71,6 +71,9 @@ void UBXSecEvent::Init()
   sce_corr_y = _default_value;
   sce_corr_z = _default_value;
 
+  time_corr_mcc9_x = _default_value;
+  sce_corr_x_reco_mcc9 = _default_value;
+
   mc_muon_contained = _default_value;
   is_swtriggered = _default_value;
   vtx_resolution = _default_value;
