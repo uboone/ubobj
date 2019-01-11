@@ -21,7 +21,7 @@ UBXSecEvent::~UBXSecEvent()
 
 void UBXSecEvent::Init()
 {
-  
+
   run = _default_value;
   subrun = _default_value;
   event = _default_value;
@@ -33,18 +33,18 @@ void UBXSecEvent::Init()
   true_muon_mom_matched = _default_value;
   n_pfp = _default_value;
   n_pfp_primary = _default_value;
-  n_pfp_flash_tagged= _default_value;  
+  n_pfp_flash_tagged= _default_value;
   nu_pfp_flash_tagged= _default_value;
-  n_pfp_geo_tagged= _default_value;   
-  nu_pfp_geo_tagged= _default_value;  
-  n_pfp_acpt_tagged= _default_value;  
-  nu_pfp_acpt_tagged= _default_value; 
-  n_pfp_stopmu_tagged= _default_value; 
-  nu_pfp_stopmu_tagged= _default_value;
-  nu_pfp_tagged_total= _default_value; 
-  geo_flash_incommon= _default_value;  
+  n_pfp_geo_tagged= _default_value;
+  nu_pfp_geo_tagged= _default_value;
+  n_pfp_acpt_tagged= _default_value;
+  nu_pfp_acpt_tagged= _default_value;
+  // n_pfp_stopmu_tagged= _default_value;
+  // nu_pfp_stopmu_tagged= _default_value;
+  nu_pfp_tagged_total= _default_value;
+  geo_flash_incommon= _default_value;
   acpt_flash_incommon= _default_value;
-  acpt_geo_incommon= _default_value; 
+  acpt_geo_incommon= _default_value;
 //pfp_trackscore=_default_value;
 //pfp_chi2_proton=_default_value;
   n_primary_cosmic_pfp = _default_value;
@@ -59,7 +59,7 @@ void UBXSecEvent::Init()
   nupdg = _default_value;
   is_signal = false;
   nu_e = _default_value;
-  lep_costheta = _default_value; 
+  lep_costheta = _default_value;
   lep_phi = _default_value;
   genie_mult = _default_value;
   genie_mult_ch = _default_value;
@@ -81,15 +81,15 @@ void UBXSecEvent::Init()
   nslices = _default_value;
   n_tpcobj_nu_origin = _default_value;
   n_tpcobj_cosmic_origin = _default_value;
-  
+
   nsignal = _default_value;
   pot = _default_value;
- 
+
   no_mcflash_but_op_activity = false;
 
-  tvtx_x.clear(); 
-  tvtx_y.clear(); 
-  tvtx_z.clear(); 
+  tvtx_x.clear();
+  tvtx_y.clear();
+  tvtx_z.clear();
 
   ResizeVectors(0);
 
@@ -135,7 +135,7 @@ void UBXSecEvent::ResizeVectors(int vsize) {
   slc_muoncandidate_theta.resize(vsize, _default_value);
   slc_muoncandidate_mom_range.resize(vsize, _default_value);
   slc_muoncandidate_mom_mcs.resize(vsize, _default_value);
-  slc_muoncandidate_mom_mcs_pi.resize(vsize, _default_value); 
+  slc_muoncandidate_mom_mcs_pi.resize(vsize, _default_value);
   slc_muoncandidate_mcs_ll.resize(vsize, _default_value);
   slc_muoncandidate_contained.resize(vsize, _default_value);
   slc_muoncandidate_dqdx_trunc.resize(vsize, _default_value);
@@ -178,6 +178,7 @@ void UBXSecEvent::ResizeVectors(int vsize) {
  pfp_trackscore.resize(vsize,-1.);
 pfp_chi2_proton.resize(vsize,-1.);
  slc_consistency_score.resize(vsize, 0.);
+ slc_stopmu_tagged.resize(vsize,false); 
 }
 
 void UBXSecEvent::ResizeGenieTruthVectors(int vsize) {
@@ -222,4 +223,3 @@ void UBXSecEvent::ResetFluxEventWeightVectorsMultisim() {
 }
 
 #endif
-
