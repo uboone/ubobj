@@ -65,6 +65,12 @@ template class art::Wrapper< art::Assns<recob::Track,crt::CRTTrack>  >;
 template class art::Assns<crt::CRTTrack,recob::Track>;
 template class art::Wrapper< art::Assns<crt::CRTTrack,recob::Track>  >;
 
+template class art::Assns<recob::Track,crt::CRTTzero>;
+template class art::Wrapper< art::Assns<recob::Track,crt::CRTTzero>  >;
+
+template class art::Assns<crt::CRTTzero,recob::Track>;
+template class art::Wrapper< art::Assns<crt::CRTTzero,recob::Track>  >;
+
 
 
 
