@@ -4,7 +4,7 @@
  * \ingroup UBXSec
  *
  * \brief Data product to store the event selection results
- * 
+ *
  *
  * \author $Author: Marco Del Tutto<marco.deltutto@physics.ox.ac.uk> $
  *
