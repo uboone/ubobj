@@ -4,7 +4,7 @@
  * \ingroup UBXSec
  *
  * \brief Data product to store a TPC Object
- * 
+ *
  *
  * \author $Author: Marco Del Tutto<marco.deltutto@physics.ox.ac.uk> $
  *
@@ -29,19 +29,23 @@
 
 namespace ubana {
   enum TPCObjectOrigin{
-    kUnknown = -1,          // -1           
+    kUnknown = -1,          // -1
     kBeamNeutrino = 0,      // 0
     kCosmicRay,             // 1
     kMixed,                 // 2
   };
 
+  std::string TPCObjectOriginToString(TPCObjectOrigin);
+
   enum TPCObjectOriginExtra{
-    kNotSet = -1,           // -1 
+    kNotSet = -1,           // -1
     kStoppingMuon = 0,      // 0
     kACPT,                  // 1
     kNCPion,                // 2
     kNCProton,              // 3
   };
+
+  std::string TPCObjectOriginExtraToString(TPCObjectOriginExtra);
 }
 
 

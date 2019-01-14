@@ -4,7 +4,7 @@
  * \ingroup UBXSec
  *
  * \brief Data product to store a UBXSec Event
- * 
+ *
  *
  * \author Marco Del Tutto <marco.deltutto@physics.ox.ac.uk>
  *
@@ -32,7 +32,7 @@ using namespace std;
 
 class UBXSecEvent /*: public TObject*/{
   public :
-  
+
   // Declaration of leaf types
   Int_t           run; ///< Run number
   Int_t           subrun; ///< Subrun number
@@ -47,21 +47,21 @@ class UBXSecEvent /*: public TObject*/{
   Int_t           n_pfp_primary; ///< Number of primary PFP in the event (neutrino PFP)
   Int_t           n_primary_cosmic_pfp; ///< Number of primary PFP in the event from pandoraCosmic (primaries before the removal)
   Int_t n_pfp_flash_tagged;   ///< Number of PFP tagged by the Flash Tagger algo
-  Int_t nu_pfp_flash_tagged;  ///< Number of neutrino origin PFP tagged by the Flash Tagger algo 
+  Int_t nu_pfp_flash_tagged;  ///< Number of neutrino origin PFP tagged by the Flash Tagger algo
   Int_t n_pfp_geo_tagged;     ///< Number of PFP tagged by the Geo Tagger algo
   Int_t nu_pfp_geo_tagged;    ///< Number of neutrino origin PFP tagged by the Geo Tagger algo
   Int_t n_pfp_acpt_tagged;    ///< Number of PFP tagged by the ACPT Tagger algo
   Int_t nu_pfp_acpt_tagged;   ///< Number of neutrino origin PFP tagged by the ACPT Tagger algo
-  Int_t n_pfp_stopmu_tagged;  ///< Number of PFP tagged by the ACPT Tagger algo
-  Int_t nu_pfp_stopmu_tagged; ///< Number of neutrino origin PFP tagged by the ACPT Tagger algo
+  // Int_t n_pfp_stopmu_tagged;  ///< Number of PFP tagged by the ACPT Tagger algo
+  // Int_t nu_pfp_stopmu_tagged; ///< Number of neutrino origin PFP tagged by the ACPT Tagger algo
   Int_t nu_pfp_tagged_total;  ///< Number of neutrino origin PFP tagged in total
   Int_t geo_flash_incommon;   ///< Number of tagged PFP in common between Geo and Flash Tagger algo
   Int_t acpt_flash_incommon;  ///< Number of tagged PFP in common between ACPT and Flash Tagger algo
   Int_t acpt_geo_incommon;    ///< Number of tagged PFP in common between ACPT and Geo Tagger algo
   Int_t           nPFPtagged; ///< Not used
   Int_t           muon_is_flash_tagged; ///< Not used
-vector<double> pfp_trackscore;
-vector<double> pfp_chi2_proton;
+  vector<double> pfp_trackscore;
+  vector<double> pfp_chi2_proton;
   Double_t        muon_tag_score; ///< Not used
   Double_t        fm_score; ///< Not used
   Int_t           fv; ///< Is 1 if the true neutrino vertex is in the fiducial volume
@@ -136,6 +136,7 @@ vector<double> pfp_chi2_proton;
   vector<bool>     slc_geocosmictag; ///< Is true if the TPCObject is through-going as a whole
   vector<bool>     slc_consistency; ///< Is false if the TPCObject is not a consistent candidate
   vector<double>   slc_consistency_score; ///< Temporary
+  vector<bool>     slc_stopmu_tagged; ///< Is true if the TPCObject is tagged by the Stopping Muon tagger as a stopping muon
   vector<int>      slc_npfp; ///< Number of PFP in the TPCObject
   vector<int>      slc_ntrack; ///< Number of tracks in the TPCObject
   vector<int>      slc_nshower; ///< Number of showers in the TPCObject
@@ -187,7 +188,7 @@ vector<double> pfp_chi2_proton;
   vector<double>   tvtx_x; ///< True neutrino vertex X (cm)
   vector<double>   tvtx_y; ///< True neutrino vertex Y (cm)
   vector<double>   tvtx_z; ///< True neutrino vertex Z (cm)
-  
+
   Double_t        pot; ///< Not used
 
   Int_t evtwgt_genie_pm1_nfunc; ///< Number of functions used for GENIE reweighting (pm1sigma)
@@ -204,19 +205,19 @@ vector<double> pfp_chi2_proton;
   vector<std::string> evtwgt_genie_models_multisim_funcname; ///< Names of the functions used for GENIE Models reweighting (multisim)
   vector<int> evtwgt_genie_models_multisim_nweight; ///< Number of weights per function name used for GENIE Models reweighting (multisim)
   vector<vector<double>> evtwgt_genie_models_multisim_weight; ///< Weights per function name used for GENIE Models reweighting (multisim)
- 
+
   Int_t evtwgt_flux_multisim_nfunc; ///< Number of functions used for FLUX reweighting (multisim)
   vector<std::string> evtwgt_flux_multisim_funcname; ///< Names of the functions used for FLUX reweighting (multisim)
   vector<int> evtwgt_flux_multisim_nweight; ///< Number of weights per function name used for FLUX reweighting (multisim)
   vector<vector<double>> evtwgt_flux_multisim_weight; ///< Weights per function name used for FLUX reweighting (multisim)
- 
-  int _default_value = -9999; ///< Default value 
+
+  int _default_value = -9999; ///< Default value
 
   UBXSecEvent();
   virtual ~UBXSecEvent();
   void Init();
-  void ResizeVectors(int); 
-  void ResizeGenieTruthVectors(int); 
+  void ResizeVectors(int);
+  void ResizeGenieTruthVectors(int);
   void ResetGenieEventWeightVectorsPM1();
   void ResetGenieEventWeightVectorsMultisim();
   void ResetGenieModelsEventWeightVectorsMultisim();
