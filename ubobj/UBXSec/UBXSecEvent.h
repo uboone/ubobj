@@ -83,8 +83,9 @@ class UBXSecEvent /*: public TObject*/{
   Double_t        sce_corr_y; ///< Space charge correction to be applied to the true nu vertex (to be summed on y)
   Double_t        sce_corr_z; ///< Space charge correction to be applied to the true nu vertex (to be summed on z)
 
-  Double_t        time_corr_mcc9_x;
-  Double_t        sce_corr_x_reco_mcc9;
+  Double_t        timeminussce_mcc8_x;
+  Double_t        time_mcc9_x;
+  
 
   Int_t           mc_muon_contained; ///< Is 1 if the true mc muon is fully contained
   Int_t           is_swtriggered; ///< Is true if the event passed the software trigger
