@@ -167,6 +167,8 @@ class UBXSecEvent /*: public TObject*/{
   vector<double>   slc_muoncandidate_mcs_delta_ll; ///< Delta LL from MCS fit
   vector<double>   slc_muoncandidate_residuals_mean; ///< Mean of the residuals (between hits and track)
   vector<double>   slc_muoncandidate_residuals_std; ///< Standard Deviation of the residuals (between hits and track)
+   vector<double>   slc_muoncandidate_residuals_truncatedmean; ///< Mean of the residuals (between hits and track)
+  vector<double>   slc_muoncandidate_residuals_truncatedstd; ///< Standard Deviation of the residuals (between hits and track)
   vector<int>      slc_muoncandidate_wiregap; ///< Biggest wire gap found in track path
   vector<int>      slc_muoncandidate_wiregap_dead; ///< Number of dead wires in the biggest wire gap found in track path
   vector<double>   slc_muoncandidate_linearity; ///< Linearity of the hit the track is made out of

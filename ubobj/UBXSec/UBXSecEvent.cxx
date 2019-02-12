@@ -149,6 +149,8 @@ void UBXSecEvent::ResizeVectors(int vsize) {
   slc_muoncandidate_mcs_delta_ll.resize(vsize, _default_value);
   slc_muoncandidate_residuals_mean.resize(vsize, _default_value);
   slc_muoncandidate_residuals_std.resize(vsize, _default_value);
+   slc_muoncandidate_residuals_truncatedmean.resize(vsize, _default_value);
+  slc_muoncandidate_residuals_truncatedstd.resize(vsize, _default_value);
   slc_muoncandidate_wiregap.resize(vsize, _default_value);
   slc_muoncandidate_wiregap_dead.resize(vsize, _default_value);
   slc_muoncandidate_linearity.resize(vsize, _default_value);
