@@ -29,7 +29,7 @@ table_fragment_end
 # Add the dependent product and version
 
 product                 version
-lardataalg              v08_03_00
+lardataalg              v08_03_00_01
 lardataobj              v08_01_00_01
 larcorealg              v08_01_00_01
 artdaq_core             v3_04_08
