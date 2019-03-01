@@ -133,6 +133,8 @@ void UBXSecEvent::ResizeVectors(int vsize) {
   slc_muoncandidate_length.resize(vsize, _default_value);
   slc_muoncandidate_phi.resize(vsize, _default_value);
   slc_muoncandidate_theta.resize(vsize, _default_value);
+  slc_muoncandidate_theta_xz.resize(vsize, _default_value);
+  slc_muoncandidate_theta_yz.resize(vsize, _default_value);
   slc_muoncandidate_mom_range.resize(vsize, _default_value);
   slc_muoncandidate_mom_mcs.resize(vsize, _default_value);
   slc_muoncandidate_mom_mcs_pi.resize(vsize, _default_value);
@@ -142,6 +144,12 @@ void UBXSecEvent::ResizeVectors(int vsize) {
   slc_muoncandidate_dqdx_u_trunc.resize(vsize);
   slc_muoncandidate_dqdx_v_trunc.resize(vsize);
   slc_muoncandidate_dqdx_v.resize(vsize);
+  slc_muoncandidate_res_range_y.resize(vsize);
+  slc_muoncandidate_res_range_v.resize(vsize);
+  slc_muoncandidate_res_range_u.resize(vsize);
+  slc_muoncandidate_dEdx_y.resize(vsize);
+  slc_muoncandidate_dEdx_v.resize(vsize);
+  slc_muoncandidate_dEdx_u.resize(vsize);
   slc_muoncandidate_mip_consistency.resize(vsize, true);
   slc_muoncandidate_mip_consistency2.resize(vsize, true);
   slc_muoncandidate_truepdg.resize(vsize, _default_value);
@@ -149,7 +157,7 @@ void UBXSecEvent::ResizeVectors(int vsize) {
   slc_muoncandidate_mcs_delta_ll.resize(vsize, _default_value);
   slc_muoncandidate_residuals_mean.resize(vsize, _default_value);
   slc_muoncandidate_residuals_std.resize(vsize, _default_value);
-   slc_muoncandidate_residuals_truncatedmean.resize(vsize, _default_value);
+  slc_muoncandidate_residuals_truncatedmean.resize(vsize, _default_value);
   slc_muoncandidate_residuals_truncatedstd.resize(vsize, _default_value);
   slc_muoncandidate_wiregap.resize(vsize, _default_value);
   slc_muoncandidate_wiregap_dead.resize(vsize, _default_value);

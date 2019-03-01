@@ -151,6 +151,10 @@ class UBXSecEvent /*: public TObject*/{
   vector<double>   slc_muoncandidate_length; ///< Track length for the muon candidate in the TPCObject
   vector<double>   slc_muoncandidate_phi; ///< Phi angle for the muon candidate in the TPCObject
   vector<double>   slc_muoncandidate_theta; ///< Theta angle for the muon candidate in the TPCObject
+
+  vector<double>   slc_muoncandidate_theta_xz; ///< Theta angle for the muon candidate in the TPCObject
+  vector<double>   slc_muoncandidate_theta_yz; ///< Theta angle for the muon candidate in the TPCObject
+
   vector<double>   slc_muoncandidate_mom_range; ///< Momentum (by range) of the muon candidate in the TPCObject
   vector<double>   slc_muoncandidate_mom_mcs; ///< Momentum (by MCS) of the muon candidate in the TPCObject
   vector<double>   slc_muoncandidate_mom_mcs_pi; ///<  Momentum (by MCS) of the muon candidate in the TPCObject (using pion hypo)
@@ -159,6 +163,15 @@ class UBXSecEvent /*: public TObject*/{
   vector<double>   slc_muoncandidate_dqdx_trunc; ///< dqdx truncated mean for the muon candidate, plane 2
   vector<double>   slc_muoncandidate_dqdx_u_trunc; ///< dqdx truncated mean for the muon candidate, plane 0
   vector<double>   slc_muoncandidate_dqdx_v_trunc; ///< dqdx truncated mean for the muon candidate, plane 1
+  
+  vector<vector<double>>   slc_muoncandidate_res_range_y; ///< residual range for the muon candidate, plane 2
+  vector<vector<double>>  slc_muoncandidate_res_range_u; ///< residual range for the muon candidate, plane 0
+  vector<vector<double>>   slc_muoncandidate_res_range_v; ///< residual range for the muon candidate, plane 1
+
+  vector<vector<double>>   slc_muoncandidate_dEdx_y; ///< residual range for the muon candidate, plane 2
+  vector<vector<double>>  slc_muoncandidate_dEdx_u; ///< residual range for the muon candidate, plane 0
+  vector<vector<double>>   slc_muoncandidate_dEdx_v; ///< residual range for the muon candidate, plane 1
+
   vector<vector<double> > slc_muoncandidate_dqdx_v; ///< dqdx for every hit for the muon candidate
   vector<bool>     slc_muoncandidate_mip_consistency; ///< true if the muon candidate pass mip consistency cut
   vector<bool>     slc_muoncandidate_mip_consistency2;
