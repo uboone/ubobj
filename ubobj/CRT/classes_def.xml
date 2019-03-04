@@ -80,8 +80,16 @@
 
 -->
 
+<class name="art::Assns<recob::Track,crt::CRTTzero>"           />
+<class name="art::Wrapper< art::Assns<recob::Track,crt::CRTTzero> >"           />
+
+
 <class name="art::Assns<recob::Track,crt::CRTTrack>"           />
 <class name="art::Wrapper< art::Assns<recob::Track,crt::CRTTrack> >"           />
+
+<class name="art::Assns<crt::CRTTzero,recob::Track>"           />
+<class name="art::Wrapper< art::Assns<crt::CRTTzero,recob::Track> >"           />
+
 
 <class name="art::Assns<crt::CRTTrack,recob::Track>"           />
 <class name="art::Wrapper< art::Assns<crt::CRTTrack,recob::Track> >"           />
