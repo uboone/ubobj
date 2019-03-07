@@ -143,13 +143,16 @@ void UBXSecEvent::ResizeVectors(int vsize) {
   slc_muoncandidate_dqdx_trunc.resize(vsize, _default_value);
   slc_muoncandidate_dqdx_u_trunc.resize(vsize);
   slc_muoncandidate_dqdx_v_trunc.resize(vsize);
-  slc_muoncandidate_dqdx_v.resize(vsize);
+  slc_muoncandidate_dqdx_vector.resize(vsize);
   slc_muoncandidate_res_range_y.resize(vsize);
   slc_muoncandidate_res_range_v.resize(vsize);
   slc_muoncandidate_res_range_u.resize(vsize);
   slc_muoncandidate_dEdx_y.resize(vsize);
   slc_muoncandidate_dEdx_v.resize(vsize);
   slc_muoncandidate_dEdx_u.resize(vsize);
+  slc_muoncandidate_dQdx_y.resize(vsize);
+  slc_muoncandidate_dQdx_v.resize(vsize);
+  slc_muoncandidate_dQdx_u.resize(vsize);
   slc_muoncandidate_mip_consistency.resize(vsize, true);
   slc_muoncandidate_mip_consistency2.resize(vsize, true);
   slc_muoncandidate_truepdg.resize(vsize, _default_value);
