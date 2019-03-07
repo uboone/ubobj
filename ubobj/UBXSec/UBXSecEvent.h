@@ -85,7 +85,7 @@ class UBXSecEvent /*: public TObject*/{
 
   Double_t        timeminussce_mcc8_x;
   Double_t        time_mcc9_x;
-  
+
 
   Int_t           mc_muon_contained; ///< Is 1 if the true mc muon is fully contained
   Int_t           is_swtriggered; ///< Is true if the event passed the software trigger
@@ -93,6 +93,7 @@ class UBXSecEvent /*: public TObject*/{
   Int_t           n_tpcobj_nu_origin; ///< Number of TPCObjects with neutrino origin in the event
   Int_t           n_tpcobj_cosmic_origin; ///< Number of TPCObjects with cosmic origin in the event
   Int_t           nslices; ///< Stores the number of TPCObjects in the event
+  vector<bool>     slc_is_nu;
   vector<double>   slc_flsmatch_score; ///< Flash matching score (-9999 means failed to match)
   vector<double>   slc_flsmatch_qllx; ///< Estimated X position given by flash matching
   vector<double>   slc_flsmatch_tpcx; ///< TPC X position given by the flash time
@@ -163,7 +164,7 @@ class UBXSecEvent /*: public TObject*/{
   vector<double>   slc_muoncandidate_dqdx_trunc; ///< dqdx truncated mean for the muon candidate, plane 2
   vector<double>   slc_muoncandidate_dqdx_u_trunc; ///< dqdx truncated mean for the muon candidate, plane 0
   vector<double>   slc_muoncandidate_dqdx_v_trunc; ///< dqdx truncated mean for the muon candidate, plane 1
-  
+
   vector<vector<double>>   slc_muoncandidate_res_range_y; ///< residual range for the muon candidate, plane 2
   vector<vector<double>>  slc_muoncandidate_res_range_u; ///< residual range for the muon candidate, plane 0
   vector<vector<double>>   slc_muoncandidate_res_range_v; ///< residual range for the muon candidate, plane 1

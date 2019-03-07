@@ -73,7 +73,7 @@ void UBXSecEvent::Init()
 
   time_mcc9_x = _default_value;
   timeminussce_mcc8_x = _default_value;
- 
+
   mc_muon_contained = _default_value;
   is_swtriggered = _default_value;
   vtx_resolution = _default_value;
@@ -96,7 +96,7 @@ void UBXSecEvent::Init()
 }
 
 void UBXSecEvent::ResizeVectors(int vsize) {
-
+  slc_is_nu.resize(vsize,false);
   slc_flsmatch_score.resize(vsize, _default_value);
   slc_flsmatch_qllx.resize(vsize, _default_value);
   slc_flsmatch_tpcx.resize(vsize, _default_value);
@@ -188,7 +188,7 @@ void UBXSecEvent::ResizeVectors(int vsize) {
  pfp_trackscore.resize(vsize,-1.);
 pfp_chi2_proton.resize(vsize,-1.);
  slc_consistency_score.resize(vsize, 0.);
- slc_stopmu_tagged.resize(vsize,false); 
+ slc_stopmu_tagged.resize(vsize,false);
 }
 
 void UBXSecEvent::ResizeGenieTruthVectors(int vsize) {
