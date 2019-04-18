@@ -32,20 +32,10 @@
 // Do not include the objects they contain internally.
 //
 
-template class std::vector<crt::CRTSimData>;
-template class art::Wrapper< std::vector<crt::CRTSimData> >;
 
-template class std::vector< std::pair<int,float> >;
-template class std::map< unsigned char, std::vector< std::pair<int,float> > >;
 
-template class std::vector<crt::CRTHit>;
-template class art::Wrapper< std::vector<crt::CRTHit> >;
 
-template class std::vector<crt::CRTTzero>;
-template class art::Wrapper< std::vector<crt::CRTTzero> >;
 
-template class std::vector<crt::CRTTrack>;
-template class art::Wrapper< std::vector<crt::CRTTrack> >;
 
 //template class std::vector< anab::T0 >;
 //template class art::Wrapper< std::vector< anab::T0 >  >;
@@ -53,17 +43,9 @@ template class art::Wrapper< std::vector<crt::CRTTrack> >;
 
 //template class std::pair< art::Ptr<crt::CRTTzero>,        art::Ptr<crt::CRTHit>    >;
 //template class std::pair< art::Ptr<crt::CRTHit>,        art::Ptr<crt::CRTTzero>    >;
-template class art::Assns<crt::CRTTzero,crt::CRTHit, void>;
-template class art::Assns<crt::CRTHit,crt::CRTTzero, void>;
-template class art::Wrapper<art::Assns<crt::CRTTzero,crt::CRTHit, void> >;
-template class art::Wrapper<art::Assns<crt::CRTHit,crt::CRTTzero, void> >;
 
 
-template class art::Assns<recob::Track,crt::CRTTrack>;
-template class art::Wrapper< art::Assns<recob::Track,crt::CRTTrack>  >;
 
-template class art::Assns<crt::CRTTrack,recob::Track>;
-template class art::Wrapper< art::Assns<crt::CRTTrack,recob::Track>  >;
 
 
 
