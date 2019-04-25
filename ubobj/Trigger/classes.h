@@ -16,4 +16,3 @@
 // Do not include the objects they contain internally.
 //
 
-template class art::Wrapper< raw::ubdaqSoftwareTriggerData >;
