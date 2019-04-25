@@ -17,5 +17,3 @@
 // Do not include the objects they contain internally.
 //
 
-template class std::vector<mix::EventMixingSummary>;
-template class art::Wrapper< std::vector<mix::EventMixingSummary> >;

@@ -19,7 +19,3 @@
 // Do not include the objects they contain internally.
 //
 
-template class std::vector< bool >;
-template class art::Wrapper< raw::DAQHeaderTimeUBooNE >;
-template struct std::pair< std::string, bool >;
-template class std::vector< std::pair< std::string, bool > >;
