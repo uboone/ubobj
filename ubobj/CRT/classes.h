@@ -54,22 +54,28 @@ template class art::Wrapper< std::vector<crt::CRTTrack> >;
 //template class std::pair< art::Ptr<crt::CRTTzero>,        art::Ptr<crt::CRTHit>    >;
 //template class std::pair< art::Ptr<crt::CRTHit>,        art::Ptr<crt::CRTTzero>    >;
 template class art::Assns<crt::CRTTzero,crt::CRTHit, void>;
-template class art::Assns<crt::CRTHit,crt::CRTTzero, void>;
 template class art::Wrapper<art::Assns<crt::CRTTzero,crt::CRTHit, void> >;
+
+template class art::Assns<crt::CRTHit,crt::CRTTzero, void>;
 template class art::Wrapper<art::Assns<crt::CRTHit,crt::CRTTzero, void> >;
 
+template class art::Assns<recob::Track,crt::CRTTrack, void>;
+template class art::Wrapper< art::Assns<recob::Track,crt::CRTTrack, void>  >;
 
-template class art::Assns<recob::Track,crt::CRTTrack>;
-template class art::Wrapper< art::Assns<recob::Track,crt::CRTTrack>  >;
+template class art::Assns<crt::CRTTrack,recob::Track, void>;
+template class art::Wrapper< art::Assns<crt::CRTTrack,recob::Track, void>  >;
 
-template class art::Assns<crt::CRTTrack,recob::Track>;
-template class art::Wrapper< art::Assns<crt::CRTTrack,recob::Track>  >;
+template class art::Assns<recob::Track,crt::CRTHit, void>;
+template class art::Wrapper< art::Assns<recob::Track,crt::CRTHit, void>  >;
 
-template class art::Assns<recob::Track,crt::CRTTzero>;
-template class art::Wrapper< art::Assns<recob::Track,crt::CRTTzero>  >;
+template class art::Assns<crt::CRTHit,recob::Track, void>;
+template class art::Wrapper< art::Assns<crt::CRTHit,recob::Track, void>  >;
 
-template class art::Assns<crt::CRTTzero,recob::Track>;
-template class art::Wrapper< art::Assns<crt::CRTTzero,recob::Track>  >;
+template class art::Assns<recob::Track,crt::CRTTzero, void>;
+template class art::Wrapper< art::Assns<recob::Track,crt::CRTTzero, void>  >;
+
+template class art::Assns<crt::CRTTzero,recob::Track, void>;
+template class art::Wrapper< art::Assns<crt::CRTTzero,recob::Track, void>  >;
 
 
 
