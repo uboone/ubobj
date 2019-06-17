@@ -29,22 +29,21 @@ table_fragment_end
 # Add the dependent product and version
 
 product                 version
-lardataalg              v08_07_01
-lardataobj              v08_04_02
-larcorealg              v08_12_00
+lardataalg              v08_07_02_01
+lardataobj              v08_04_03_01
+larcorealg              v08_12_01_01
 artdaq_core             v3_04_18
 cetbuildtools	        v7_12_01	-	only_for_build
 end_product_list
 
 qualifier      lardataobj     larcorealg     artdaq_core      lardataalg   
+c2:py3:debug   c2:py3:debug   c2:py3:debug   c2:py3:debug:s84 c2:py3:debug
+c2:py3:prof    c2:py3:prof    c2:py3:prof    c2:py3:prof:s84  c2:py3:prof
+e17:py3:debug  e17:py3:debug  e17:py3:debug  e17:py3:debug:s84 e17:py3:debug
+e17:py3:prof   e17:py3:prof   e17:py3:prof   e17:py3:prof:s84 e17:py3:prof
 c2:debug       c2:debug       c2:debug       c2:debug:s84     c2:debug
-c2:opt         c2:opt         c2:opt         c2:opt:s84       c2:opt
 c2:prof        c2:prof        c2:prof        c2:prof:s84      c2:prof
-e15:debug      e15:debug      e15:debug      e15:debug:s84    e15:debug
-e15:opt        e15:opt        e15:opt        e15:opt:s84      e15:opt
-e15:prof       e15:prof       e15:prof       e15:prof:s84     e15:prof
 e17:debug      e17:debug      e17:debug      e17:debug:s84    e17:debug
-e17:opt        e17:opt        e17:opt        e17:opt:s84      e17:opt
 e17:prof       e17:prof       e17:prof       e17:prof:s84     e17:prof
 end_qualifier_list
 
