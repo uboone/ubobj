@@ -32,7 +32,7 @@ product                 version
 lardataalg              v08_08_05
 lardataobj              v08_04_10
 larcorealg              v08_14_02
-artdaq_core             v3_04_20
+artdaq_core             v3_05_01
 cetbuildtools	        v7_12_01	-	only_for_build
 end_product_list
 
