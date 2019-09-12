@@ -37,14 +37,14 @@ cetbuildtools	        v7_12_01	-	only_for_build
 end_product_list
 
 qualifier      lardataobj     larcorealg     artdaq_core       lardataalg   
-c2:py3:debug   c2:py3:debug   c2:py3:debug   c2:py3:debug:s86  c2:py3:debug
-c2:py3:prof    c2:py3:prof    c2:py3:prof    c2:py3:prof:s86   c2:py3:prof
-e17:py3:debug  e17:py3:debug  e17:py3:debug  e17:py3:debug:s86 e17:py3:debug
-e17:py3:prof   e17:py3:prof   e17:py3:prof   e17:py3:prof:s86  e17:py3:prof
-c2:debug       c2:debug       c2:debug       c2:debug:s86      c2:debug
-c2:prof        c2:prof        c2:prof        c2:prof:s86       c2:prof
-e17:debug      e17:debug      e17:debug      e17:debug:s86     e17:debug
-e17:prof       e17:prof       e17:prof       e17:prof:s86      e17:prof
+c2:py3:debug   c2:py3:debug   c2:py3:debug   c2:py3:debug:s90  c2:py3:debug
+c2:py3:prof    c2:py3:prof    c2:py3:prof    c2:py3:prof:s90   c2:py3:prof
+e17:py3:debug  e17:py3:debug  e17:py3:debug  e17:py3:debug:s90 e17:py3:debug
+e17:py3:prof   e17:py3:prof   e17:py3:prof   e17:py3:prof:s90  e17:py3:prof
+c2:debug       c2:debug       c2:debug       c2:debug:s90      c2:debug
+c2:prof        c2:prof        c2:prof        c2:prof:s90       c2:prof
+e17:debug      e17:debug      e17:debug      e17:debug:s90     e17:debug
+e17:prof       e17:prof       e17:prof       e17:prof:s90      e17:prof
 end_qualifier_list
 
 # Preserve tabs and formatting in emacs and vi / vim:
