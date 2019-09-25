@@ -2,7 +2,7 @@
 
 # The *parent* line must the first non-commented line and defines this product and version
 # The version must be of the form vxx_yy_zz (e.g. v01_02_03)
-parent ubobj v08_30_01
+parent ubobj v08_31_00
 
 defaultqual e17
 
@@ -29,22 +29,22 @@ table_fragment_end
 # Add the dependent product and version
 
 product                 version
-lardataalg              v08_08_05
-lardataobj              v08_04_10
-larcorealg              v08_14_02
-artdaq_core             v3_04_20
-cetbuildtools	        v7_12_01	-	only_for_build
+lardataalg              v08_08_06
+lardataobj              v08_05_00
+larcorealg              v08_14_03
+artdaq_core             v3_05_02
+cetbuildtools	        v7_03_02	-	only_for_build
 end_product_list
 
 qualifier      lardataobj     larcorealg     artdaq_core       lardataalg   
-c2:py3:debug   c2:py3:debug   c2:py3:debug   c2:py3:debug:s86  c2:py3:debug
-c2:py3:prof    c2:py3:prof    c2:py3:prof    c2:py3:prof:s86   c2:py3:prof
-e17:py3:debug  e17:py3:debug  e17:py3:debug  e17:py3:debug:s86 e17:py3:debug
-e17:py3:prof   e17:py3:prof   e17:py3:prof   e17:py3:prof:s86  e17:py3:prof
-c2:debug       c2:debug       c2:debug       c2:debug:s86      c2:debug
-c2:prof        c2:prof        c2:prof        c2:prof:s86       c2:prof
-e17:debug      e17:debug      e17:debug      e17:debug:s86     e17:debug
-e17:prof       e17:prof       e17:prof       e17:prof:s86      e17:prof
+c2:py3:debug   c2:py3:debug   c2:py3:debug   c2:py3:debug      c2:py3:debug
+c2:py3:prof    c2:py3:prof    c2:py3:prof    c2:py3:prof       c2:py3:prof
+e17:py3:debug  e17:py3:debug  e17:py3:debug  e17:py3:debug     e17:py3:debug
+e17:py3:prof   e17:py3:prof   e17:py3:prof   e17:py3:prof      e17:py3:prof
+c2:debug       c2:debug       c2:debug       c2:debug	       c2:debug
+c2:prof        c2:prof        c2:prof        c2:prof	       c2:prof
+e17:debug      e17:debug      e17:debug      e17:debug	       e17:debug
+e17:prof       e17:prof       e17:prof       e17:prof	       e17:prof
 end_qualifier_list
 
 # Preserve tabs and formatting in emacs and vi / vim:
