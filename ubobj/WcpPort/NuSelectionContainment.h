@@ -19,7 +19,9 @@ namespace nsm{
 			   bool isTGM,
 			   bool notFC_FV,
 			   bool notFC_SP,
-			   bool notFC_DC);
+			   bool notFC_DC,
+			   float charge,
+			   float energy);
 
     void SetFlashFound(bool flash_found);
     void SetFlashTime(float flash_time);
@@ -32,6 +34,8 @@ namespace nsm{
     void SetNotFCFV(bool notFC_FV);
     void SetNotFCSP(bool notFC_SP);
     void SetNotFCDC(bool notFC_DC);
+    void SetCharge(float charge);
+    void SetEnergy(float energy);
 
     const bool & GetFlashFound() const;
     const float & GetFlashTime() const;
@@ -44,6 +48,8 @@ namespace nsm{
     const bool & GetNotFCFV() const;
     const bool & GetNotFCSP() const;
     const bool & GetNotFCDC() const;
+    const float & GetCharge() const;
+    const float & GetEnergy() const;
 
   private:
     bool _flash_found;
@@ -57,6 +63,8 @@ namespace nsm{
     bool _notFC_FV;
     bool _notFC_SP;
     bool _notFC_DC;
+    float _charge;
+    float _energy;
   };
 }
 

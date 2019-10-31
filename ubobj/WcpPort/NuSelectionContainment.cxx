@@ -15,6 +15,8 @@
     _notFC_FV=false;
     _notFC_SP=false;
     _notFC_DC=false;
+    _charge=-1.;
+    _energy=-1.; 
   }
 
   nsm::NuSelectionContainment::NuSelectionContainment(bool flash_found,
@@ -27,7 +29,9 @@
 						 bool isTGM,
 						 bool notFC_FV,
 						 bool notFC_SP,
-						 bool notFC_DC){
+						 bool notFC_DC,
+				     		 float charge,
+				     		 float energy){
     _flash_found=flash_found;
     _flash_time=flash_time;
     _flash_measPe=flash_measPe;
@@ -39,6 +43,8 @@
     _notFC_FV=notFC_FV;
     _notFC_SP=notFC_SP;
     _notFC_DC=notFC_DC;
+    _charge=charge;
+    _energy=energy; 
   }
 
   void nsm::NuSelectionContainment::SetFlashFound(bool flash_found){ this->_flash_found = flash_found; }
@@ -52,6 +58,8 @@
   void nsm::NuSelectionContainment::SetNotFCFV(bool notFC_FV){ this->_notFC_FV = notFC_FV; }
   void nsm::NuSelectionContainment::SetNotFCSP(bool notFC_SP){ this->_notFC_SP = notFC_SP; }
   void nsm::NuSelectionContainment::SetNotFCDC(bool notFC_DC){ this->_notFC_DC = notFC_DC; }
+  void nsm::NuSelectionContainment::SetCharge(float charge){ this->_charge = charge; }
+  void nsm::NuSelectionContainment::SetEnergy(float energy){ this->_energy = energy; }
   
   const bool  & nsm::NuSelectionContainment::GetFlashFound() const { return this->_flash_found; }
   const float & nsm::NuSelectionContainment::GetFlashTime() const { return this->_flash_time; }
@@ -64,5 +72,7 @@
   const bool & nsm::NuSelectionContainment::GetNotFCFV() const { return this->_notFC_FV; }
   const bool & nsm::NuSelectionContainment::GetNotFCSP() const { return this->_notFC_SP; }
   const bool & nsm::NuSelectionContainment::GetNotFCDC() const { return this->_notFC_DC; }
+  const float & nsm::NuSelectionContainment::GetCharge() const { return this->_charge; }
+  const float & nsm::NuSelectionContainment::GetEnergy() const { return this->_energy; }
 
 
