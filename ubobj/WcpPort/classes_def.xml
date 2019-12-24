@@ -20,4 +20,9 @@
   <class name="std::vector<nsm::NuSelectionTruth>"/>
   <class name="art::Wrapper<std::vector<nsm::NuSelectionTruth>>"/>
 
+  <class name="nsm::NuSelectionSTM"/>
+  <class name="art::Wrapper<nsm::NuSelectionSTM>"/>
+  <class name="std::vector<nsm::NuSelectionSTM>"/>
+  <class name="art::Wrapper<std::vector<nsm::NuSelectionSTM>>"/>
+
 </lcgdict>

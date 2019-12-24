@@ -7,4 +7,7 @@
 #include "ubobj/WcpPort/NuSelectionMatch.h"
 #include "ubobj/WcpPort/NuSelectionTruth.h"
 
+// for STM labels
+#include "ubobj/WcpPort/NuSelectionSTM.h"
+
 #include <vector>
