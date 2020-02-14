@@ -2,7 +2,7 @@
 
 # The *parent* line must the first non-commented line and defines this product and version
 # The version must be of the form vxx_yy_zz (e.g. v01_02_03)
-parent ubobj v08_41_01
+parent ubobj v08_43_00
 
 defaultqual e19
 
@@ -29,22 +29,22 @@ table_fragment_end
 # Add the dependent product and version
 
 product                 version
-lardataalg              v08_13_01
-lardataobj              v08_10_01
-larcorealg              v08_20_01
-artdaq_core             v3_05_09
+lardataalg              v08_13_02
+lardataobj              v08_10_02
+larcorealg              v08_20_02
+artdaq_core             v3_05_11
 cetbuildtools	        v7_15_01	-	only_for_build
 end_product_list
 
 qualifier      lardataobj     larcorealg     artdaq_core       lardataalg   
-c7:py2:debug   c7:py2:debug   c7:py2:debug   c7:py2:debug:s94  c7:py2:debug
-c7:py2:prof    c7:py2:prof    c7:py2:prof    c7:py2:prof:s94   c7:py2:prof
-c7:debug       c7:debug       c7:debug       c7:debug:s94      c7:debug
-c7:prof        c7:prof        c7:prof        c7:prof:s94       c7:prof
-e19:py2:debug  e19:py2:debug  e19:py2:debug  e19:py2:debug:s94 e19:py2:debug
-e19:py2:prof   e19:py2:prof   e19:py2:prof   e19:py2:prof:s94  e19:py2:prof
-e19:debug      e19:debug      e19:debug      e19:debug:s94     e19:debug
-e19:prof       e19:prof       e19:prof       e19:prof:s94      e19:prof
+c7:py2:debug   c7:py2:debug   c7:py2:debug   c7:py2:debug:s95  c7:py2:debug
+c7:py2:prof    c7:py2:prof    c7:py2:prof    c7:py2:prof:s95   c7:py2:prof
+c7:debug       c7:debug       c7:debug       c7:debug:s95      c7:debug
+c7:prof        c7:prof        c7:prof        c7:prof:s95       c7:prof
+e19:py2:debug  e19:py2:debug  e19:py2:debug  e19:py2:debug:s95 e19:py2:debug
+e19:py2:prof   e19:py2:prof   e19:py2:prof   e19:py2:prof:s95  e19:py2:prof
+e19:debug      e19:debug      e19:debug      e19:debug:s95     e19:debug
+e19:prof       e19:prof       e19:prof       e19:prof:s95      e19:prof
 end_qualifier_list
 
 # Preserve tabs and formatting in emacs and vi / vim:
