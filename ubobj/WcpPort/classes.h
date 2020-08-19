@@ -10,4 +10,10 @@
 // for STM labels
 #include "ubobj/WcpPort/NuSelectionSTM.h"
 
+// for BDT input variables
+#include "ubobj/WcpPort/NuSelectionBDT.h"
+
+// for kinetic variables
+#include "ubobj/WcpPort/NuSelectionKINE.h"
+
 #include <vector>
