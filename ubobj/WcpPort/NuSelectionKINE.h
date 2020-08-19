@@ -24,6 +24,7 @@ namespace nsm{
     // pi0 information ...
     float kine_pio_mass; // mass
     int kine_pio_flag; // 0 not filled, 1, with vertex: CCpio, 2 without vertex: NCpi0
+    float kine_pio_vtx_dis;
     float kine_pio_energy_1;
     float kine_pio_theta_1;
     float kine_pio_phi_1;
