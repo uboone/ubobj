@@ -2,7 +2,7 @@
 
 # The *parent* line must the first non-commented line and defines this product and version
 # The version must be of the form vxx_yy_zz (e.g. v01_02_03)
-parent ubobj v09_06_00
+parent ubobj v09_08_00
 
 defaultqual e19
 
@@ -29,22 +29,22 @@ table_fragment_end
 # Add the dependent product and version
 
 product                 version
-lardataalg              v09_01_01
+lardataalg              v09_02_00
 lardataobj              v09_00_01
 larcorealg              v09_00_01
-artdaq_core             v3_06_01
+artdaq_core             v3_06_03
 cetbuildtools	        v7_15_01	-	only_for_build
 end_product_list
 
-qualifier      lardataobj     larcorealg     artdaq_core       lardataalg   
-c7:py2:debug   c7:py2:debug   c7:py2:debug   c7:py2:debug:s97  c7:py2:debug
-c7:py2:prof    c7:py2:prof    c7:py2:prof    c7:py2:prof:s97   c7:py2:prof
-c7:debug       c7:debug       c7:debug       c7:debug:s97      c7:debug
-c7:prof        c7:prof        c7:prof        c7:prof:s97       c7:prof
-e19:py2:debug  e19:py2:debug  e19:py2:debug  e19:py2:debug:s97 e19:py2:debug
-e19:py2:prof   e19:py2:prof   e19:py2:prof   e19:py2:prof:s97  e19:py2:prof
-e19:debug      e19:debug      e19:debug      e19:debug:s97     e19:debug
-e19:prof       e19:prof       e19:prof       e19:prof:s97      e19:prof
+qualifier      lardataobj     larcorealg     artdaq_core        lardataalg   
+c7:py2:debug   c7:py2:debug   c7:py2:debug   c7:py2:debug:s102  c7:py2:debug
+c7:py2:prof    c7:py2:prof    c7:py2:prof    c7:py2:prof:s102   c7:py2:prof
+c7:debug       c7:debug       c7:debug       c7:debug:s102      c7:debug
+c7:prof        c7:prof        c7:prof        c7:prof:s102       c7:prof
+e19:py2:debug  e19:py2:debug  e19:py2:debug  e19:py2:debug:s102 e19:py2:debug
+e19:py2:prof   e19:py2:prof   e19:py2:prof   e19:py2:prof:s102  e19:py2:prof
+e19:debug      e19:debug      e19:debug      e19:debug:s102     e19:debug
+e19:prof       e19:prof       e19:prof       e19:prof:s102      e19:prof
 end_qualifier_list
 
 # Preserve tabs and formatting in emacs and vi / vim:
