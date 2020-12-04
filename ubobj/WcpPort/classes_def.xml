@@ -65,5 +65,6 @@
   <class name="std::vector<nsm::NuSelectionKINE>"/>
   <class name="art::Wrapper<std::vector<nsm::NuSelectionKINE>>"/>
     
+  <class name="std::map<std::string, std::vector<float>>"/>
 
 </lcgdict>
