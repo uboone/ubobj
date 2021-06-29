@@ -1,0 +1,70 @@
+<lcgdict>
+
+  <class name="nsm::NuSelectionCharge"/>
+  <class name="art::Wrapper<nsm::NuSelectionCharge>"/>
+  <class name="std::vector<nsm::NuSelectionCharge>"/>
+  <class name="art::Wrapper<std::vector<nsm::NuSelectionCharge>>"/>
+
+  <class name="nsm::NuSelectionContainment"/>
+  <class name="art::Wrapper<nsm::NuSelectionContainment>"/>
+  <class name="std::vector<nsm::NuSelectionContainment>"/>
+  <class name="art::Wrapper<std::vector<nsm::NuSelectionContainment>>"/>
+
+  <class name="nsm::NuSelectionMatch"/>
+  <class name="art::Wrapper<nsm::NuSelectionMatch>"/>
+  <class name="std::vector<nsm::NuSelectionMatch>"/>
+  <class name="art::Wrapper<std::vector<nsm::NuSelectionMatch>>"/>
+
+  <class name="nsm::NuSelectionTruth"/>
+  <class name="art::Wrapper<nsm::NuSelectionTruth>"/>
+  <class name="std::vector<nsm::NuSelectionTruth>"/>
+  <class name="art::Wrapper<std::vector<nsm::NuSelectionTruth>>"/>
+
+  <class name="nsm::NuSelectionSTM"/>
+  <class name="art::Wrapper<nsm::NuSelectionSTM>"/>
+  <class name="std::vector<nsm::NuSelectionSTM>"/>
+  <class name="art::Wrapper<std::vector<nsm::NuSelectionSTM>>"/>
+
+  <!-- BE aware that the inner struct also to be put here -->
+  <class name="nsm::NuSelectionBDT"/>
+  <class name="nsm::NuSelectionBDT::CosmicTagger"/>
+  <class name="nsm::NuSelectionBDT::GapID"/>
+  <class name="nsm::NuSelectionBDT::MipCheck"/>
+  <class name="nsm::NuSelectionBDT::MipID1"/>
+  <class name="nsm::NuSelectionBDT::MipID2"/>
+  <class name="nsm::NuSelectionBDT::Pi0Tagger1"/>
+  <class name="nsm::NuSelectionBDT::Pi0Tagger2"/>
+  <class name="nsm::NuSelectionBDT::MultiGamma1"/>
+  <class name="nsm::NuSelectionBDT::MultiGamma2"/>
+  <class name="nsm::NuSelectionBDT::SingleGamma1"/>
+  <class name="nsm::NuSelectionBDT::SingleGamma2"/>
+  <class name="nsm::NuSelectionBDT::StemLen"/>
+  <class name="nsm::NuSelectionBDT::LowEMichel"/>
+  <class name="nsm::NuSelectionBDT::BrokenMuon"/>
+  <class name="nsm::NuSelectionBDT::MuEnergy"/>
+  <class name="nsm::NuSelectionBDT::ShowerAngle"/>
+  <class name="nsm::NuSelectionBDT::BadStem"/>
+  <class name="nsm::NuSelectionBDT::VtxInShw"/>
+  <class name="nsm::NuSelectionBDT::BadReco1"/>
+  <class name="nsm::NuSelectionBDT::BadReco2"/>
+  <class name="nsm::NuSelectionBDT::BadReco3"/>
+  <class name="nsm::NuSelectionBDT::BadReco4"/>
+  <class name="nsm::NuSelectionBDT::TrackOverCluster"/>
+  <class name="nsm::NuSelectionBDT::HighEoverlap"/>
+  <class name="nsm::NuSelectionBDT::LowEoverlap"/>
+  <class name="nsm::NuSelectionBDT::MajorCosmicTagger"/>
+  <class name="nsm::NuSelectionBDT::NumuCCTagger"/>
+  <class name="nsm::NuSelectionBDT::BDTscores"/>
+  <class name="art::Wrapper<nsm::NuSelectionBDT>"/>
+  <class name="std::vector<nsm::NuSelectionBDT>"/>
+  <class name="art::Wrapper<std::vector<nsm::NuSelectionBDT>>"/>
+  
+  <class name="nsm::NuSelectionKINE"/>
+  <class name="nsm::NuSelectionKINE::KineInfo"/>
+  <class name="art::Wrapper<nsm::NuSelectionKINE>"/>
+  <class name="std::vector<nsm::NuSelectionKINE>"/>
+  <class name="art::Wrapper<std::vector<nsm::NuSelectionKINE>>"/>
+    
+  <class name="std::map<std::string, std::vector<float>>"/>
+
+</lcgdict>
