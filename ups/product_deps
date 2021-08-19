@@ -39,8 +39,6 @@ end_product_list
 qualifier      lardataobj     larcorealg     artdaq_core        lardataalg
 c7:debug       c7:debug       c7:debug       c7:debug:s112      c7:debug
 c7:prof        c7:prof        c7:prof        c7:prof:s112       c7:prof
-e19:debug      e19:debug      e19:debug      e19:debug:s112     e19:debug
-e19:prof       e19:prof       e19:prof       e19:prof:s112      e19:prof
 e20:debug      e20:debug      e20:debug      e20:debug:s112     e20:debug
 e20:prof       e20:prof       e20:prof       e20:prof:s112      e20:prof
 end_qualifier_list
