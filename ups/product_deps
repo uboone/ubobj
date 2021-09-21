@@ -29,11 +29,11 @@ table_fragment_end
 # Add the dependent product and version
 
 product                 version
-lardataalg              v09_04_07_01
-lardataobj              v09_01_06_01
-larcorealg              v09_02_01_01
+lardataalg              v09_06_00
+lardataobj              v09_03_00
+larcorealg              v09_03_00
 artdaq_core             v3_07_04
-cetbuildtools           v8_15_00	-	only_for_build
+cetbuildtools           v8_17_03	-	only_for_build
 end_product_list
 
 qualifier      lardataobj     larcorealg     artdaq_core        lardataalg
