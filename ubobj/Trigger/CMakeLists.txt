@@ -1,6 +1,6 @@
 # for classes_def.xml!!
 
-cet_make( LIBRARIES ${ROOT_BASIC_LIB_LIST}
+cet_make( LIBRARIES
 	  	    ${ROOT_EG}
 		    NO_DICTIONARY
 )
