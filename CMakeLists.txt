@@ -14,7 +14,7 @@
 
 cmake_minimum_required(VERSION 3.19 FATAL_ERROR)
 
-project(ubobj VERSION 09.31.00 LANGUAGES CXX)
+project(ubobj VERSION 09.32.00 LANGUAGES CXX)
 
 # cetbuildtools contains our cmake modules
 find_package(cetbuildtools REQUIRED)
@@ -37,9 +37,9 @@ find_ups_product( larcorealg )
 find_ups_product( larcoreobj )
 find_ups_product( lardataobj )
 find_ups_product( lardataalg )
-find_ups_boost( v1_53_0 )
+find_ups_boost( )
 find_ups_product( canvas )
-find_ups_product( artdaq_core v1_00_00 )
+find_ups_product( artdaq_core )
 find_ups_product( nusimdata )
 
 # macros for dictionary and simple_plugin
