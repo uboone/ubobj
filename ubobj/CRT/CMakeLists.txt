@@ -4,7 +4,7 @@ include_directories( $ENV{NUTOOLS_INC} )
 
 
 cet_make( LIBRARIES lardataobj_AnalysisBase
-	  	    ${ROOT_BASIC_LIB_LIST}
+
 	  	    ${ROOT_EG}
 		    NO_DICTIONARY
         )
