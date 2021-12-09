@@ -5,7 +5,7 @@ include_directories( $ENV{NUTOOLS_INC} )
 
 cet_make( LIBRARIES lardataobj_RecoBase
 
-		    ${ROOT_EG}
+		    ROOT::EG
 		    NO_DICTIONARY
         )
 

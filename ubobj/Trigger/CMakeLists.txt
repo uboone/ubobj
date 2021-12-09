@@ -1,7 +1,7 @@
 # for classes_def.xml!!
 
 cet_make( LIBRARIES
-	  	    ${ROOT_EG}
+	  	    ROOT::EG
 		    NO_DICTIONARY
 )
 
