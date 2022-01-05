@@ -1,8 +1,7 @@
 include_directories( ${CMAKE_CURRENT_SOURCE_DIR} )
 include_directories( $ENV{NUTOOLS_INC} )
 
-cet_make( LIBRARIES ${ROOT_BASIC_LIB_LIST}
-	            ROOT::EG
+cet_make( LIBRARIES ROOT::EG
 	            NO_DICTIONARY
 	)
 
