@@ -8,10 +8,338 @@ namespace nsm{
   class NuSelectionBDT{
   public:
   NuSelectionBDT();
-  void reset(); 
+  void reset();
+
+  struct SPID{
+    float shw_sp_num_mip_tracks;
+    float shw_sp_num_muons;
+    float shw_sp_num_pions;
+    float shw_sp_num_protons;
+    float shw_sp_proton_length_1;
+    float shw_sp_proton_dqdx_1;
+    float shw_sp_proton_energy_1;
+    float shw_sp_proton_length_2;
+    float shw_sp_proton_dqdx_2;
+    float shw_sp_proton_energy_2;
+    float shw_sp_n_good_showers;
+    float shw_sp_n_20mev_showers;
+    float shw_sp_n_br1_showers;
+    float shw_sp_n_br2_showers;
+    float shw_sp_n_br3_showers;
+    float shw_sp_n_br4_showers;
+    float shw_sp_n_20br1_showers;
+    std::vector<int> *shw_sp_20mev_showers;
+    std::vector<int> *shw_sp_br1_showers;
+    std::vector<int> *shw_sp_br2_showers;
+    std::vector<int> *shw_sp_br3_showers;
+    std::vector<int> *shw_sp_br4_showers;
+    float shw_sp_shw_vtx_dis;
+    float shw_sp_max_shw_dis;
+  };
+  void SetSPID(SPID);
+  const SPID & GetSPID() const;
+
+  struct SPSHWID1{
+	  float shw_sp_filled;
+	  float shw_sp_flag;
+	  float shw_sp_energy;
+	  float shw_sp_vec_dQ_dx_0;
+	  float shw_sp_vec_dQ_dx_1;
+	  float shw_sp_max_dQ_dx_sample;
+	  float shw_sp_n_below_threshold;
+	  float shw_sp_n_below_zero;
+	  float shw_sp_n_lowest;
+	  float shw_sp_n_highest;
+	  float shw_sp_lowest_dQ_dx;
+	  float shw_sp_highest_dQ_dx;
+	  float shw_sp_medium_dQ_dx;
+	  float shw_sp_stem_length;
+	  float shw_sp_length_main;
+	  float shw_sp_length_total;
+	  float shw_sp_angle_beam;
+	  float shw_sp_iso_angle;
+	  float shw_sp_n_vertex;
+	  float shw_sp_n_good_tracks;
+	  float shw_sp_E_indirect_max_energy;
+	  float shw_sp_flag_all_above;
+	  float shw_sp_min_dQ_dx_5;
+	  float shw_sp_n_other_vertex;
+	  float shw_sp_n_stem_size;
+	  float shw_sp_flag_stem_trajectory;
+	  float shw_sp_min_dis;
+  };
+  void SetSPSHWID1(SPSHWID1);
+  const SPSHWID1 & GetSPSHWID1() const;
+
+  struct SPSHWID2{
+    float shw_sp_vec_median_dedx;
+    float shw_sp_vec_mean_dedx;
+	  float shw_sp_vec_dQ_dx_2;
+	  float shw_sp_vec_dQ_dx_3;
+	  float shw_sp_vec_dQ_dx_4;
+	  float shw_sp_vec_dQ_dx_5;
+	  float shw_sp_vec_dQ_dx_6;
+	  float shw_sp_vec_dQ_dx_7;
+	  float shw_sp_vec_dQ_dx_8;
+	  float shw_sp_vec_dQ_dx_9;
+	  float shw_sp_vec_dQ_dx_10;
+	  float shw_sp_vec_dQ_dx_11;
+	  float shw_sp_vec_dQ_dx_12;
+	  float shw_sp_vec_dQ_dx_13;
+	  float shw_sp_vec_dQ_dx_14;
+	  float shw_sp_vec_dQ_dx_15;
+	  float shw_sp_vec_dQ_dx_16;
+	  float shw_sp_vec_dQ_dx_17;
+	  float shw_sp_vec_dQ_dx_18;
+	  float shw_sp_vec_dQ_dx_19;
+  };
+  void SetSPSHWID2(SPSHWID2);
+  const SPSHWID2 & GetSPSHWID2() const;
+
+  struct SPPi0Tagger1{
+	  float shw_sp_pio_filled;
+	  float shw_sp_pio_flag;
+	  float shw_sp_pio_mip_id;
+	  float shw_sp_pio_flag_pio;
+
+	  float shw_sp_pio_1_flag;
+	  float shw_sp_pio_1_mass;
+	  float shw_sp_pio_1_pio_type;
+	  float shw_sp_pio_1_energy_1;
+	  float shw_sp_pio_1_energy_2;
+	  float shw_sp_pio_1_dis_1;
+	  float shw_sp_pio_1_dis_2;
+
+	  std::vector<float> *shw_sp_pio_2_v_flag;
+	  std::vector<float> *shw_sp_pio_2_v_dis2;
+	  std::vector<float> *shw_sp_pio_2_v_angle2;
+	  std::vector<float> *shw_sp_pio_2_v_acc_length;
+  };
+  void SetSPPi0Tagger1(SPPi0Tagger1);
+  const SPPi0Tagger1 & GetSPPi0Tagger1() const;
+
+  struct SPLowEMichel{
+	  float shw_sp_lem_flag;
+	  float shw_sp_lem_shower_total_length;
+	  float shw_sp_lem_shower_main_length;
+	  float shw_sp_lem_n_3seg;
+	  float shw_sp_lem_e_charge;
+	  float shw_sp_lem_e_dQdx;
+	  float shw_sp_lem_shower_num_segs;
+	  float shw_sp_lem_shower_num_main_segs;
+  };
+  void SetSPLowEMichel(SPLowEMichel);
+  const SPLowEMichel & GetSPLowEMichel() const;
+
+  struct SPBadReco1{
+	  float shw_sp_br_filled;
+	  float shw_sp_br1_flag;
+
+	  float shw_sp_br1_1_flag;
+	  float shw_sp_br1_1_shower_type;
+	  float shw_sp_br1_1_vtx_n_segs;
+	  float shw_sp_br1_1_energy;
+	  float shw_sp_br1_1_n_segs;
+	  float shw_sp_br1_1_flag_sg_topology;
+	  float shw_sp_br1_1_flag_sg_trajectory;
+	  float shw_sp_br1_1_sg_length;
+
+	  float shw_sp_br1_2_flag;
+	  float shw_sp_br1_2_energy;
+	  float shw_sp_br1_2_n_connected;
+	  float shw_sp_br1_2_max_length;
+	  float shw_sp_br1_2_n_connected_1;
+	  float shw_sp_br1_2_vtx_n_segs;
+	  float shw_sp_br1_2_n_shower_segs;
+	  float shw_sp_br1_2_max_length_ratio;
+	  float shw_sp_br1_2_shower_length;
+
+	  float shw_sp_br1_3_flag;
+	  float shw_sp_br1_3_energy;
+	  float shw_sp_br1_3_n_connected_p;
+	  float shw_sp_br1_3_max_length_p;
+	  float shw_sp_br1_3_n_shower_segs;
+	  float shw_sp_br1_3_flag_sg_topology;
+	  float shw_sp_br1_3_flag_sg_trajectory;
+	  float shw_sp_br1_3_n_shower_main_segs;
+	  float shw_sp_br1_3_sg_length;
+  };
+  void SetSPBadReco1(SPBadReco1);
+  const SPBadReco1 & GetSPBadReco1() const;
+
+  struct SPBadReco2{
+	  float shw_sp_br_filled;
+
+	  float shw_sp_br2_flag;
+	  float shw_sp_br2_flag_single_shower;
+	  float shw_sp_br2_num_valid_tracks;
+	  float shw_sp_br2_energy;
+	  float shw_sp_br2_angle1;
+	  float shw_sp_br2_angle2;
+	  float shw_sp_br2_angle;
+	  float shw_sp_br2_angle3;
+	  float shw_sp_br2_n_shower_main_segs;
+	  float shw_sp_br2_max_angle;
+	  float shw_sp_br2_sg_length;
+	  float shw_sp_br2_flag_sg_trajectory;
+  };
+  void SetSPBadReco2(SPBadReco2);
+  const SPBadReco2 & GetSPBadReco2() const;
+
+  struct SPBadReco3{
+	  float shw_sp_br_filled;
+	  float shw_sp_br3_flag;
+
+	  float shw_sp_br3_1_flag;
+	  float shw_sp_br3_1_energy;
+	  float shw_sp_br3_1_n_shower_segments;
+	  float shw_sp_br3_1_sg_flag_trajectory;
+	  float shw_sp_br3_1_sg_direct_length;
+	  float shw_sp_br3_1_sg_length;
+	  float shw_sp_br3_1_total_main_length;
+	  float shw_sp_br3_1_total_length;
+	  float shw_sp_br3_1_iso_angle;
+	  float shw_sp_br3_1_sg_flag_topology;
+
+	  float shw_sp_br3_2_flag;
+	  float shw_sp_br3_2_n_ele;
+	  float shw_sp_br3_2_n_other;
+	  float shw_sp_br3_2_energy;
+	  float shw_sp_br3_2_total_main_length;
+	  float shw_sp_br3_2_total_length;
+	  float shw_sp_br3_2_other_fid;
+
+	  std::vector<float> *shw_sp_br3_3_v_flag;
+	  std::vector<float> *shw_sp_br3_3_v_energy;
+	  std::vector<float> *shw_sp_br3_3_v_angle;
+	  std::vector<float> *shw_sp_br3_3_v_dir_length;
+	  std::vector<float> *shw_sp_br3_3_v_length;
+
+	  float shw_sp_br3_4_flag;
+	  float shw_sp_br3_4_acc_length;
+	  float shw_sp_br3_4_total_length;
+	  float shw_sp_br3_4_energy;
+
+	  std::vector<float> *shw_sp_br3_5_v_flag;
+	  std::vector<float> *shw_sp_br3_5_v_dir_length;
+	  std::vector<float> *shw_sp_br3_5_v_total_length;
+	  std::vector<float> *shw_sp_br3_5_v_flag_avoid_muon_check;
+	  std::vector<float> *shw_sp_br3_5_v_n_seg;
+	  std::vector<float> *shw_sp_br3_5_v_angle;
+	  std::vector<float> *shw_sp_br3_5_v_sg_length;
+	  std::vector<float> *shw_sp_br3_5_v_energy;
+	  std::vector<float> *shw_sp_br3_5_v_n_main_segs;
+	  std::vector<float> *shw_sp_br3_5_v_n_segs;
+	  std::vector<float> *shw_sp_br3_5_v_shower_main_length;
+	  std::vector<float> *shw_sp_br3_5_v_shower_total_length;
+
+	  std::vector<float> *shw_sp_br3_6_v_flag;
+	  std::vector<float> *shw_sp_br3_6_v_angle;
+	  std::vector<float> *shw_sp_br3_6_v_angle1;
+	  std::vector<float> *shw_sp_br3_6_v_flag_shower_trajectory;
+	  std::vector<float> *shw_sp_br3_6_v_direct_length;
+	  std::vector<float> *shw_sp_br3_6_v_length;
+	  std::vector<float> *shw_sp_br3_6_v_n_other_vtx_segs;
+	  std::vector<float> *shw_sp_br3_6_v_energy;
+
+	  float shw_sp_br3_7_flag;
+	  float shw_sp_br3_7_energy;
+	  float shw_sp_br3_7_min_angle;
+	  float shw_sp_br3_7_sg_length;
+	  float shw_sp_br3_7_shower_main_length;
+
+	  float shw_sp_br3_8_flag;
+	  float shw_sp_br3_8_max_dQ_dx;
+	  float shw_sp_br3_8_energy;
+	  float shw_sp_br3_8_n_main_segs;
+	  float shw_sp_br3_8_shower_main_length;
+	  float shw_sp_br3_8_shower_length;
+  };
+  void SetSPBadReco3(SPBadReco3);
+  const SPBadReco3 & GetSPBadReco3() const;
+
+  struct SPBadReco4{
+	  float shw_sp_br_filled;
+	  float shw_sp_br4_flag;
+
+	  float shw_sp_br4_1_flag;
+	  float shw_sp_br4_1_shower_main_length;
+	  float shw_sp_br4_1_shower_total_length;
+	  float shw_sp_br4_1_min_dis;
+	  float shw_sp_br4_1_energy;
+	  float shw_sp_br4_1_flag_avoid_muon_check;
+	  float shw_sp_br4_1_n_vtx_segs;
+	  float shw_sp_br4_1_n_main_segs;
+
+	  float shw_sp_br4_2_flag;
+	  float shw_sp_br4_2_ratio_45;
+	  float shw_sp_br4_2_ratio_35;
+	  float shw_sp_br4_2_ratio_25;
+	  float shw_sp_br4_2_ratio_15;
+	  float shw_sp_br4_2_energy;
+	  float shw_sp_br4_2_ratio1_45;
+	  float shw_sp_br4_2_ratio1_35;
+	  float shw_sp_br4_2_ratio1_25;
+	  float shw_sp_br4_2_ratio1_15;
+	  float shw_sp_br4_2_iso_angle;
+	  float shw_sp_br4_2_iso_angle1;
+	  float shw_sp_br4_2_angle;
+  };
+  void SetSPBadReco4(SPBadReco4);
+  const SPBadReco4 & GetSPBadReco4() const;
+
+  struct SPHighEoverlap{
+	  float shw_sp_hol_flag;
+
+	  float shw_sp_hol_1_flag;
+	  float shw_sp_hol_1_n_valid_tracks;
+	  float shw_sp_hol_1_min_angle;
+	  float shw_sp_hol_1_energy;
+	  float shw_sp_hol_1_flag_all_shower;
+	  float shw_sp_hol_1_min_length;
+
+	  float shw_sp_hol_2_flag;
+	  float shw_sp_hol_2_min_angle;
+	  float shw_sp_hol_2_medium_dQ_dx;
+	  float shw_sp_hol_2_ncount;
+	  float shw_sp_hol_2_energy;
+  };
+  void SetSPHighEoverlap(SPHighEoverlap);
+  const SPHighEoverlap & GetSPHighEoverlap() const;
+
+  struct SPLowEoverlap{
+	  float shw_sp_lol_flag;
+
+	  std::vector<float> *shw_sp_lol_1_v_flag;
+	  std::vector<float> *shw_sp_lol_1_v_energy;
+	  std::vector<float> *shw_sp_lol_1_v_vtx_n_segs;
+	  std::vector<float> *shw_sp_lol_1_v_nseg;
+	  std::vector<float> *shw_sp_lol_1_v_angle;
+
+	  std::vector<float> *shw_sp_lol_2_v_flag;
+	  std::vector<float> *shw_sp_lol_2_v_length;
+	  std::vector<float> *shw_sp_lol_2_v_angle;
+	  std::vector<float> *shw_sp_lol_2_v_type;
+	  std::vector<float> *shw_sp_lol_2_v_vtx_n_segs;
+	  std::vector<float> *shw_sp_lol_2_v_energy;
+	  std::vector<float> *shw_sp_lol_2_v_shower_main_length;
+	  std::vector<float> *shw_sp_lol_2_v_flag_dir_weak;
+
+	  float shw_sp_lol_3_flag;
+	  float shw_sp_lol_3_angle_beam;
+	  float shw_sp_lol_3_n_valid_tracks;
+	  float shw_sp_lol_3_min_angle;
+	  float shw_sp_lol_3_vtx_n_segs;
+	  float shw_sp_lol_3_energy;
+	  float shw_sp_lol_3_shower_main_length;
+	  float shw_sp_lol_3_n_out;
+	  float shw_sp_lol_3_n_sum;
+  };
+  void SetSPLowEoverlap(SPLowEoverlap);
+  const SPLowEoverlap & GetSPLowEoverlap() const;
 
   struct CosmicTagger{
-	  float cosmic_filled;	
+	  float cosmic_filled;
 	  float cosmic_flag;
 	  float cosmic_n_solid_tracks;
 	  float cosmic_energy_main_showers;
@@ -20,7 +348,7 @@ namespace nsm{
 	  float cosmic_n_direct_showers;
 	  float cosmic_n_indirect_showers;
 	  float cosmic_n_main_showers;
-  }; 
+  };
   void SetCosmicTagger(CosmicTagger);
   const CosmicTagger & GetCosmicTagger() const;
 
@@ -53,7 +381,7 @@ namespace nsm{
 	  float mip_quality_acc_length;
 	  float mip_quality_shortest_angle;
 	  float mip_quality_flag_proton;
-  }; 
+  };
   void SetMipCheck(MipCheck);
   const MipCheck & GetMipCheck() const;
 
@@ -61,7 +389,7 @@ namespace nsm{
 	  float mip_filled;
 	  float mip_flag;
 	  float mip_energy;
-	  float mip_n_end_reduction;    
+	  float mip_n_end_reduction;
 	  float mip_n_first_mip;
 	  float mip_n_first_non_mip;
 	  float mip_n_first_non_mip_1;
@@ -86,7 +414,7 @@ namespace nsm{
 	  float mip_E_indirect_max_energy;
 	  float mip_flag_all_above;
 	  float mip_min_dQ_dx_5;
-	  float mip_n_other_vertex; 
+	  float mip_n_other_vertex;
 	  float mip_n_stem_size;
 	  float mip_flag_stem_trajectory;
 	  float mip_min_dis;
@@ -113,7 +441,7 @@ namespace nsm{
 	  float mip_vec_dQ_dx_17;
 	  float mip_vec_dQ_dx_18;
 	  float mip_vec_dQ_dx_19;
-  };	
+  };
   void SetMipID2(MipID2);
   const MipID2 & GetMipID2() const;
 
@@ -135,7 +463,7 @@ namespace nsm{
 	  std::vector<float> *pio_2_v_dis2;
 	  std::vector<float> *pio_2_v_angle2;
 	  std::vector<float> *pio_2_v_acc_length;
-  }; 
+  };
   void SetPi0Tagger1(Pi0Tagger1);
   const Pi0Tagger1 & GetPi0Tagger1() const;
 
@@ -169,7 +497,7 @@ namespace nsm{
 	  float mgo_total_other_energy;
 	  float mgo_n_total_showers;
 	  float mgo_total_other_energy_1;
-  }; 
+  };
   void SetMultiGamma1(MultiGamma1);
   const MultiGamma1 & GetMultiGamma1() const;
 
@@ -186,7 +514,7 @@ namespace nsm{
 	  float mgt_e_direct_total_energy;
 	  float mgt_flag_indirect_max_pio;
 	  float mgt_e_indirect_total_energy;
-  }; 
+  };
   void SetMultiGamma2(MultiGamma2);
   const MultiGamma2 & GetMultiGamma2() const;
 
@@ -248,7 +576,7 @@ namespace nsm{
 	  float stem_len_flag_avoid_muon_check;
 	  float stem_len_num_daughters;
 	  float stem_len_daughter_length;
-  }; 
+  };
   void SetStemLen(StemLen);
   const StemLen & GetStemLen() const;
 
@@ -385,7 +713,7 @@ namespace nsm{
 	  float br1_3_flag_sg_trajectory;
 	  float br1_3_n_shower_main_segs;
 	  float br1_3_sg_length;
-  };  
+  };
   void SetBadReco1(BadReco1);
   const BadReco1 & GetBadReco1() const;
 
@@ -410,7 +738,7 @@ namespace nsm{
 
   struct BadReco3{
 	  float br_filled;
-	  float br3_flag;	
+	  float br3_flag;
 
 	  float br3_1_flag;
 	  float br3_1_energy;
@@ -451,18 +779,18 @@ namespace nsm{
 	  std::vector<float> *br3_5_v_sg_length;
 	  std::vector<float> *br3_5_v_energy;
 	  std::vector<float> *br3_5_v_n_main_segs;
-	  std::vector<float> *br3_5_v_n_segs; 
-	  std::vector<float> *br3_5_v_shower_main_length; 
-	  std::vector<float> *br3_5_v_shower_total_length; 
+	  std::vector<float> *br3_5_v_n_segs;
+	  std::vector<float> *br3_5_v_shower_main_length;
+	  std::vector<float> *br3_5_v_shower_total_length;
 
-	  std::vector<float> *br3_6_v_flag; 
-	  std::vector<float> *br3_6_v_angle; 
+	  std::vector<float> *br3_6_v_flag;
+	  std::vector<float> *br3_6_v_angle;
 	  std::vector<float> *br3_6_v_angle1;
-	  std::vector<float> *br3_6_v_flag_shower_trajectory; 
-	  std::vector<float> *br3_6_v_direct_length; 
-	  std::vector<float> *br3_6_v_length; 
-	  std::vector<float> *br3_6_v_n_other_vtx_segs; 
-	  std::vector<float> *br3_6_v_energy; 
+	  std::vector<float> *br3_6_v_flag_shower_trajectory;
+	  std::vector<float> *br3_6_v_direct_length;
+	  std::vector<float> *br3_6_v_length;
+	  std::vector<float> *br3_6_v_n_other_vtx_segs;
+	  std::vector<float> *br3_6_v_energy;
 
 	  float br3_7_flag;
 	  float br3_7_energy;
@@ -476,7 +804,7 @@ namespace nsm{
 	  float br3_8_n_main_segs;
 	  float br3_8_shower_main_length;
 	  float br3_8_shower_length;
-  }; 
+  };
   void SetBadReco3(BadReco3);
   const BadReco3 & GetBadReco3() const;
 
@@ -608,12 +936,12 @@ namespace nsm{
 	  float lol_3_energy;
 	  float lol_3_shower_main_length;
 	  float lol_3_n_out;
-	  float lol_3_n_sum;    
+	  float lol_3_n_sum;
   };
   void SetLowEoverlap(LowEoverlap);
   const LowEoverlap & GetLowEoverlap() const;
-  
-  /// major cosmic tagger 
+
+  /// major cosmic tagger
   struct MajorCosmicTagger{
 	  // cosmic tagger
 	  float cosmict_flag_1; // fiducial volume vertex
@@ -697,10 +1025,10 @@ namespace nsm{
 	  std::vector<float> *cosmict_10_flag_dir_weak;
 	  std::vector<float> *cosmict_10_angle_beam;
 	  std::vector<float> *cosmict_10_length;
-  }; 
+  };
   void SetMajorCosmicTagger(MajorCosmicTagger);
   const MajorCosmicTagger & GetMajorCosmicTagger() const;
- 
+
   struct NumuCCTagger{
 	  // numu tagger
 	  float numu_cc_flag;
@@ -731,7 +1059,7 @@ namespace nsm{
 	  float numu_cc_3_max_muon_length;
 	  float numu_cc_3_n_daughter_tracks;
 	  float numu_cc_3_n_daughter_all;
-  }; 
+  };
   void SetNumuCCTagger(NumuCCTagger);
   const NumuCCTagger & GetNumuCCTagger() const;
 
@@ -784,27 +1112,38 @@ namespace nsm{
 	  float tro_4_score;
 	  float tro_5_score;
 	  float nue_score;
-  }; 
+  };
   void SetBDTscores(BDTscores);
   const BDTscores & GetBDTscores() const;
 
   private:
+  SPID _SPID_;
+  SPSHWID1 _SPSHWID1_;
+  SPSHWID2 _SPSHWID2_;
+  SPPi0Tagger1 _SPPi0Tagger1_;
+	SPLowEMichel _SPLowEMichel_;
+	SPBadReco1 _SPBadReco1_;
+	SPBadReco2 _SPBadReco2_;
+	SPBadReco3 _SPBadReco3_;
+	SPBadReco4 _SPBadReco4_;
+	SPHighEoverlap _SPHighEoverlap_;
+	SPLowEoverlap _SPLowEoverlap_;
 	CosmicTagger _CosmicTagger_;
 	GapID _GapID_;
 	MipCheck _MipCheck_;
-	MipID1 _MipID1_;		
-	MipID2 _MipID2_;	
+	MipID1 _MipID1_;
+	MipID2 _MipID2_;
  	Pi0Tagger1 _Pi0Tagger1_;
-	Pi0Tagger2 _Pi0Tagger2_;	
-	MultiGamma1 _MultiGamma1_;	
-	MultiGamma2 _MultiGamma2_;	
+	Pi0Tagger2 _Pi0Tagger2_;
+	MultiGamma1 _MultiGamma1_;
+	MultiGamma2 _MultiGamma2_;
 	SingleGamma1 _SingleGamma1_;
-	SingleGamma2 _SingleGamma2_;	
+	SingleGamma2 _SingleGamma2_;
 	StemLen _StemLen_;
 	LowEMichel _LowEMichel_;
 	BrokenMuon _BrokenMuon_;
 	MuEnergy _MuEnergy_;
-	ShowerAngle _ShowerAngle_;		
+	ShowerAngle _ShowerAngle_;
 	BadStem _BadStem_;
 	VtxInShw _VtxInShw_;
 	BadReco1 _BadReco1_;
@@ -817,8 +1156,7 @@ namespace nsm{
 	MajorCosmicTagger _MajorCosmicTagger_;
 	NumuCCTagger _NumuCCTagger_;
 	BDTscores _BDTscores_;
-  };	
+  };
 }
 
 #endif
-

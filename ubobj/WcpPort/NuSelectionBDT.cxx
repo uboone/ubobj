@@ -4,6 +4,18 @@
 using namespace nsm;
 
   NuSelectionBDT::NuSelectionBDT() {
+    NuSelectionBDT::SPID _SPID_init = {0};
+    NuSelectionBDT::SPSHWID1 _SPSHWID1_init = {0};
+	  NuSelectionBDT::SPSHWID2 _SPSHWID2_init = {0};
+	  NuSelectionBDT::SPPi0Tagger1 _SPPi0Tagger1_init = {0};
+	  NuSelectionBDT::SPLowEMichel _SPLowEMichel_init = {0};
+	  NuSelectionBDT::SPBadReco1 _SPBadReco1_init = {0};
+	  NuSelectionBDT::SPBadReco2 _SPBadReco2_init = {0};
+	  NuSelectionBDT::SPBadReco3 _SPBadReco3_init = {0};
+	  NuSelectionBDT::SPBadReco4 _SPBadReco4_init = {0};
+	  NuSelectionBDT::SPHighEoverlap _SPHighEoverlap_init = {0};
+	  NuSelectionBDT::SPLowEoverlap _SPLowEoverlap_init = {0};
+
 	  NuSelectionBDT::CosmicTagger _CosmicTagger_init = {0};
 	  NuSelectionBDT::GapID _GapID_init = {0};
 	  NuSelectionBDT::MipCheck _MipCheck_init = {0};
@@ -32,68 +44,20 @@ using namespace nsm;
 	  NuSelectionBDT::MajorCosmicTagger _MajorCosmicTagger_init = {0};
 	  NuSelectionBDT::NumuCCTagger _NumuCCTagger_init = {0};
 	  NuSelectionBDT::BDTscores _BDTscores_init = {0};
-	
-	  _CosmicTagger_ = _CosmicTagger_init;
-	  _GapID_ = _GapID_init;
-	  _MipCheck_ = _MipCheck_init;
-	  _MipID1_ = _MipID1_init;
-	  _MipID2_ = _MipID2_init;
-	  _Pi0Tagger1_ = _Pi0Tagger1_init;
-	  _Pi0Tagger2_ = _Pi0Tagger2_init;
-	  _MultiGamma1_ = _MultiGamma1_init;
-	  _MultiGamma2_ = _MultiGamma2_init;
-	  _SingleGamma1_ = _SingleGamma1_init;
-	  _SingleGamma2_ = _SingleGamma2_init;
-	  _StemLen_ = _StemLen_init;
-	  _LowEMichel_ = _LowEMichel_init;
-	  _BrokenMuon_ = _BrokenMuon_init;
-	  _MuEnergy_ = _MuEnergy_init;
-	  _ShowerAngle_ = _ShowerAngle_init;
-	  _BadStem_ = _BadStem_init;
-	  _VtxInShw_ = _VtxInShw_init;
-	  _BadReco1_ = _BadReco1_init;
-	  _BadReco2_ = _BadReco2_init;
-	  _BadReco3_ = _BadReco3_init;
-	  _BadReco4_ = _BadReco4_init;
-	  _TrackOverCluster_ = _TrackOverCluster_init;
-	  _HighEoverlap_ = _HighEoverlap_init;
-	  _LowEoverlap_ = _LowEoverlap_init;
-	  _MajorCosmicTagger_ = _MajorCosmicTagger_init;
-	  _NumuCCTagger_ = _NumuCCTagger_init;
-	  _BDTscores_ = _BDTscores_init;
-  }
-  
-  void NuSelectionBDT::reset(){
-	  NuSelectionBDT::CosmicTagger _CosmicTagger_init = {0};
-	  NuSelectionBDT::GapID _GapID_init = {0};
-	  NuSelectionBDT::MipCheck _MipCheck_init = {0};
-	  NuSelectionBDT::MipID1 _MipID1_init = {0};
-	  NuSelectionBDT::MipID2 _MipID2_init = {0};
-	  NuSelectionBDT::Pi0Tagger1 _Pi0Tagger1_init = {0};
-	  NuSelectionBDT::Pi0Tagger2 _Pi0Tagger2_init = {0};
-	  NuSelectionBDT::MultiGamma1 _MultiGamma1_init = {0};
-	  NuSelectionBDT::MultiGamma2 _MultiGamma2_init = {0};
-	  NuSelectionBDT::SingleGamma1 _SingleGamma1_init = {0};
-	  NuSelectionBDT::SingleGamma2 _SingleGamma2_init = {0};
-	  NuSelectionBDT::StemLen _StemLen_init = {0};
-	  NuSelectionBDT::LowEMichel _LowEMichel_init = {0};
-	  NuSelectionBDT::BrokenMuon _BrokenMuon_init = {0};
-	  NuSelectionBDT::MuEnergy _MuEnergy_init = {0};
-	  NuSelectionBDT::ShowerAngle _ShowerAngle_init = {0};
-	  NuSelectionBDT::BadStem _BadStem_init = {0};
-	  NuSelectionBDT::VtxInShw _VtxInShw_init = {0};
-	  NuSelectionBDT::BadReco1 _BadReco1_init = {0};
-	  NuSelectionBDT::BadReco2 _BadReco2_init = {0};
-	  NuSelectionBDT::BadReco3 _BadReco3_init = {0};
-	  NuSelectionBDT::BadReco4 _BadReco4_init = {0};
-	  NuSelectionBDT::TrackOverCluster _TrackOverCluster_init = {0};
-	  NuSelectionBDT::HighEoverlap _HighEoverlap_init = {0};
-	  NuSelectionBDT::LowEoverlap _LowEoverlap_init = {0};
-	  NuSelectionBDT::MajorCosmicTagger _MajorCosmicTagger_init = {0};
-	  NuSelectionBDT::NumuCCTagger _NumuCCTagger_init = {0};
-	  NuSelectionBDT::BDTscores _BDTscores_init = {0};
-	
-	  _CosmicTagger_ = _CosmicTagger_init;
+
+    _SPID_ = _SPID_init;
+    _SPSHWID1_ = _SPSHWID1_init;
+	  _SPSHWID2_ = _SPSHWID2_init;
+	  _SPPi0Tagger1_ = _SPPi0Tagger1_init;
+	  _SPLowEMichel_ = _SPLowEMichel_init;
+	  _SPBadReco1_ = _SPBadReco1_init;
+	  _SPBadReco2_ = _SPBadReco2_init;
+	  _SPBadReco3_ = _SPBadReco3_init;
+	  _SPBadReco4_ = _SPBadReco4_init;
+	  _SPHighEoverlap_ = _SPHighEoverlap_init;
+	  _SPLowEoverlap_ = _SPLowEoverlap_init;
+
+    _CosmicTagger_ = _CosmicTagger_init;
 	  _GapID_ = _GapID_init;
 	  _MipCheck_ = _MipCheck_init;
 	  _MipID1_ = _MipID1_init;
@@ -123,6 +87,102 @@ using namespace nsm;
 	  _BDTscores_ = _BDTscores_init;
   }
 
+  void NuSelectionBDT::reset(){
+    NuSelectionBDT::SPID _SPID_init = {0};
+    NuSelectionBDT::SPSHWID1 _SPSHWID1_init = {0};
+	  NuSelectionBDT::SPSHWID2 _SPSHWID2_init = {0};
+	  NuSelectionBDT::SPPi0Tagger1 _SPPi0Tagger1_init = {0};
+	  NuSelectionBDT::SPLowEMichel _SPLowEMichel_init = {0};
+	  NuSelectionBDT::SPBadReco1 _SPBadReco1_init = {0};
+	  NuSelectionBDT::SPBadReco2 _SPBadReco2_init = {0};
+	  NuSelectionBDT::SPBadReco3 _SPBadReco3_init = {0};
+	  NuSelectionBDT::SPBadReco4 _SPBadReco4_init = {0};
+	  NuSelectionBDT::SPHighEoverlap _SPHighEoverlap_init = {0};
+	  NuSelectionBDT::SPLowEoverlap _SPLowEoverlap_init = {0};
+
+	  NuSelectionBDT::CosmicTagger _CosmicTagger_init = {0};
+	  NuSelectionBDT::GapID _GapID_init = {0};
+	  NuSelectionBDT::MipCheck _MipCheck_init = {0};
+	  NuSelectionBDT::MipID1 _MipID1_init = {0};
+	  NuSelectionBDT::MipID2 _MipID2_init = {0};
+	  NuSelectionBDT::Pi0Tagger1 _Pi0Tagger1_init = {0};
+	  NuSelectionBDT::Pi0Tagger2 _Pi0Tagger2_init = {0};
+	  NuSelectionBDT::MultiGamma1 _MultiGamma1_init = {0};
+	  NuSelectionBDT::MultiGamma2 _MultiGamma2_init = {0};
+	  NuSelectionBDT::SingleGamma1 _SingleGamma1_init = {0};
+	  NuSelectionBDT::SingleGamma2 _SingleGamma2_init = {0};
+	  NuSelectionBDT::StemLen _StemLen_init = {0};
+	  NuSelectionBDT::LowEMichel _LowEMichel_init = {0};
+	  NuSelectionBDT::BrokenMuon _BrokenMuon_init = {0};
+	  NuSelectionBDT::MuEnergy _MuEnergy_init = {0};
+	  NuSelectionBDT::ShowerAngle _ShowerAngle_init = {0};
+	  NuSelectionBDT::BadStem _BadStem_init = {0};
+	  NuSelectionBDT::VtxInShw _VtxInShw_init = {0};
+	  NuSelectionBDT::BadReco1 _BadReco1_init = {0};
+	  NuSelectionBDT::BadReco2 _BadReco2_init = {0};
+	  NuSelectionBDT::BadReco3 _BadReco3_init = {0};
+	  NuSelectionBDT::BadReco4 _BadReco4_init = {0};
+	  NuSelectionBDT::TrackOverCluster _TrackOverCluster_init = {0};
+	  NuSelectionBDT::HighEoverlap _HighEoverlap_init = {0};
+	  NuSelectionBDT::LowEoverlap _LowEoverlap_init = {0};
+	  NuSelectionBDT::MajorCosmicTagger _MajorCosmicTagger_init = {0};
+	  NuSelectionBDT::NumuCCTagger _NumuCCTagger_init = {0};
+	  NuSelectionBDT::BDTscores _BDTscores_init = {0};
+
+    _SPID_ = _SPID_init;
+    _SPSHWID1_ = _SPSHWID1_init;
+	  _SPSHWID2_ = _SPSHWID2_init;
+	  _SPPi0Tagger1_ = _SPPi0Tagger1_init;
+	  _SPLowEMichel_ = _SPLowEMichel_init;
+	  _SPBadReco1_ = _SPBadReco1_init;
+	  _SPBadReco2_ = _SPBadReco2_init;
+	  _SPBadReco3_ = _SPBadReco3_init;
+	  _SPBadReco4_ = _SPBadReco4_init;
+	  _SPHighEoverlap_ = _SPHighEoverlap_init;
+	  _SPLowEoverlap_ = _SPLowEoverlap_init;
+
+    _CosmicTagger_ = _CosmicTagger_init;
+	  _GapID_ = _GapID_init;
+	  _MipCheck_ = _MipCheck_init;
+	  _MipID1_ = _MipID1_init;
+	  _MipID2_ = _MipID2_init;
+	  _Pi0Tagger1_ = _Pi0Tagger1_init;
+	  _Pi0Tagger2_ = _Pi0Tagger2_init;
+	  _MultiGamma1_ = _MultiGamma1_init;
+	  _MultiGamma2_ = _MultiGamma2_init;
+	  _SingleGamma1_ = _SingleGamma1_init;
+	  _SingleGamma2_ = _SingleGamma2_init;
+	  _StemLen_ = _StemLen_init;
+	  _LowEMichel_ = _LowEMichel_init;
+	  _BrokenMuon_ = _BrokenMuon_init;
+	  _MuEnergy_ = _MuEnergy_init;
+	  _ShowerAngle_ = _ShowerAngle_init;
+	  _BadStem_ = _BadStem_init;
+	  _VtxInShw_ = _VtxInShw_init;
+	  _BadReco1_ = _BadReco1_init;
+	  _BadReco2_ = _BadReco2_init;
+	  _BadReco3_ = _BadReco3_init;
+	  _BadReco4_ = _BadReco4_init;
+	  _TrackOverCluster_ = _TrackOverCluster_init;
+	  _HighEoverlap_ = _HighEoverlap_init;
+	  _LowEoverlap_ = _LowEoverlap_init;
+	  _MajorCosmicTagger_ = _MajorCosmicTagger_init;
+	  _NumuCCTagger_ = _NumuCCTagger_init;
+	  _BDTscores_ = _BDTscores_init;
+  }
+
+  void NuSelectionBDT::SetSPID(NuSelectionBDT::SPID BDT_input){ this->_SPID_=BDT_input; }
+  void NuSelectionBDT::SetSPSHWID1(NuSelectionBDT::SPSHWID1 BDT_input){ this->_SPSHWID1_=BDT_input; }
+  void NuSelectionBDT::SetSPSHWID2(NuSelectionBDT::SPSHWID2 BDT_input){ this->_SPSHWID2_=BDT_input; }
+  void NuSelectionBDT::SetSPPi0Tagger1(NuSelectionBDT::SPPi0Tagger1 BDT_input){ this->_SPPi0Tagger1_=BDT_input; }
+  void NuSelectionBDT::SetSPLowEMichel(NuSelectionBDT::SPLowEMichel BDT_input){ this->_SPLowEMichel_=BDT_input; }
+  void NuSelectionBDT::SetSPBadReco1(NuSelectionBDT::SPBadReco1 BDT_input){ this->_SPBadReco1_=BDT_input; }
+  void NuSelectionBDT::SetSPBadReco2(NuSelectionBDT::SPBadReco2 BDT_input){ this->_SPBadReco2_=BDT_input; }
+  void NuSelectionBDT::SetSPBadReco3(NuSelectionBDT::SPBadReco3 BDT_input){ this->_SPBadReco3_=BDT_input; }
+  void NuSelectionBDT::SetSPBadReco4(NuSelectionBDT::SPBadReco4 BDT_input){ this->_SPBadReco4_=BDT_input; }
+  void NuSelectionBDT::SetSPHighEoverlap(NuSelectionBDT::SPHighEoverlap BDT_input){ this->_SPHighEoverlap_=BDT_input; }
+  void NuSelectionBDT::SetSPLowEoverlap(NuSelectionBDT::SPLowEoverlap BDT_input){ this->_SPLowEoverlap_=BDT_input; }
+
   void NuSelectionBDT::SetCosmicTagger(NuSelectionBDT::CosmicTagger BDT_input){ this->_CosmicTagger_=BDT_input; }
   void NuSelectionBDT::SetGapID(NuSelectionBDT::GapID BDT_input){ this->_GapID_=BDT_input; }
   void NuSelectionBDT::SetMipCheck(NuSelectionBDT::MipCheck BDT_input){ this->_MipCheck_=BDT_input; }
@@ -151,6 +211,18 @@ using namespace nsm;
   void NuSelectionBDT::SetMajorCosmicTagger(NuSelectionBDT::MajorCosmicTagger BDT_input){ this->_MajorCosmicTagger_=BDT_input; }
   void NuSelectionBDT::SetNumuCCTagger(NuSelectionBDT::NumuCCTagger BDT_input){ this->_NumuCCTagger_=BDT_input; }
   void NuSelectionBDT::SetBDTscores(NuSelectionBDT::BDTscores BDT_input){ this->_BDTscores_=BDT_input; }
+
+  const NuSelectionBDT::SPID & NuSelectionBDT::GetSPID() const { return this->_SPID_; }
+  const NuSelectionBDT::SPSHWID1 & NuSelectionBDT::GetSPSHWID1() const { return this->_SPSHWID1_; }
+  const NuSelectionBDT::SPSHWID2 & NuSelectionBDT::GetSPSHWID2() const { return this->_SPSHWID2_; }
+  const NuSelectionBDT::SPPi0Tagger1 & NuSelectionBDT::GetSPPi0Tagger1() const { return this->_SPPi0Tagger1_; }
+  const NuSelectionBDT::SPLowEMichel & NuSelectionBDT::GetSPLowEMichel() const { return this->_SPLowEMichel_; }
+  const NuSelectionBDT::SPBadReco1 & NuSelectionBDT::GetSPBadReco1() const { return this->_SPBadReco1_; }
+  const NuSelectionBDT::SPBadReco2 & NuSelectionBDT::GetSPBadReco2() const { return this->_SPBadReco2_; }
+  const NuSelectionBDT::SPBadReco3 & NuSelectionBDT::GetSPBadReco3() const { return this->_SPBadReco3_; }
+  const NuSelectionBDT::SPBadReco4 & NuSelectionBDT::GetSPBadReco4() const { return this->_SPBadReco4_; }
+  const NuSelectionBDT::SPHighEoverlap & NuSelectionBDT::GetSPHighEoverlap() const { return this->_SPHighEoverlap_; }
+  const NuSelectionBDT::SPLowEoverlap & NuSelectionBDT::GetSPLowEoverlap() const { return this->_SPLowEoverlap_; }
 
   const NuSelectionBDT::CosmicTagger & NuSelectionBDT::GetCosmicTagger() const { return this->_CosmicTagger_; }
   const NuSelectionBDT::GapID & NuSelectionBDT::GetGapID() const { return this->_GapID_; }
