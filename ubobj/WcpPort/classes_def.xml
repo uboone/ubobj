@@ -27,6 +27,17 @@
 
   <!-- BE aware that the inner struct also to be put here -->
   <class name="nsm::NuSelectionBDT"/>
+  <class name="nsm::NuSelectionBDT::SPID"/>
+  <class name="nsm::NuSelectionBDT::SPSHWID1"/>
+  <class name="nsm::NuSelectionBDT::SPSHWID2"/>
+  <class name="nsm::NuSelectionBDT::SPPi0Tagger1"/>
+  <class name="nsm::NuSelectionBDT::SPLowEMichel"/>
+  <class name="nsm::NuSelectionBDT::SPBadReco1"/>
+  <class name="nsm::NuSelectionBDT::SPBadReco2"/>
+  <class name="nsm::NuSelectionBDT::SPBadReco3"/>
+  <class name="nsm::NuSelectionBDT::SPBadReco4"/>
+  <class name="nsm::NuSelectionBDT::SPHighEoverlap"/>
+  <class name="nsm::NuSelectionBDT::SPLowEoverlap"/>
   <class name="nsm::NuSelectionBDT::CosmicTagger"/>
   <class name="nsm::NuSelectionBDT::GapID"/>
   <class name="nsm::NuSelectionBDT::MipCheck"/>
