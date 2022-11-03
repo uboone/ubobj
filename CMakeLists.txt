@@ -41,6 +41,7 @@ find_ups_boost( )
 find_ups_root( )
 find_ups_product( canvas )
 find_ups_product( artdaq_core )
+find_ups_product(TRACE)
 find_ups_product( nusimdata )
 
 # macros for dictionary and simple_plugin
