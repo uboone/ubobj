@@ -29,8 +29,8 @@ table_fragment_end
 # Add the dependent product and version
 
 product                 version
-lardataalg              v09_15_00
-lardataobj              v09_16_00
+lardataalg              v09_15_01
+lardataobj              v09_16_01
 larcorealg              v09_12_00
 artdaq_core             v3_09_11
 cetbuildtools           v8_20_00	-	only_for_build
