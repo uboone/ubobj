@@ -1,11 +1,14 @@
-# for classes_def.xml!!
-
-cet_make( LIBRARIES
-	  	    ROOT::EG
-		    NO_DICTIONARY
+cet_make_library(
+  SOURCE
+  Flash.cc
+  FlashList.cc
+  SubEvent.cc
+  SubEventList.cc
 )
 
-art_dictionary( DICTIONARY_LIBRARIES ubobj_Optical )
+art_dictionary(
+  DICTIONARY_LIBRARIES ubobj::Optical
+)
 
 install_headers()
 install_fhicl()

@@ -1,11 +1,17 @@
-include_directories( ${CMAKE_CURRENT_SOURCE_DIR} )
-include_directories( $ENV{NUTOOLS_INC} )
+cet_make_library(
+  SOURCE
+  NuSelectionBDT.cxx
+  NuSelectionContainment.cxx
+  NuSelectionMatch.cxx
+  NuSelectionTruth.cxx
+  NuSelectionCharge.cxx
+  NuSelectionKINE.cxx
+  NuSelectionSTM.cxx
+)
 
-cet_make( LIBRARIES ROOT::EG
-	            NO_DICTIONARY
-	)
-
-art_dictionary( DICTIONARY_LIBRARIES ubobj_WcpPort )
+art_dictionary(
+  DICTIONARY_LIBRARIES ubobj::WcpPort
+)
 
 install_headers()
 install_fhicl()
