@@ -26,7 +26,7 @@ find_package(lardataobj REQUIRED EXPORT)
 
 # macros for dictionary and simple_plugin
 include(ArtDictionary)
-include(CetMakeLibrary)
+include(ArtMake)
 
 # sources
 add_subdirectory(ubobj)
