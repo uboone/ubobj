@@ -27,7 +27,7 @@ void raw::ubdaqSoftwareTriggerData::addAlgorithm(std::string name_, bool pass_, 
 
 std::vector<std::string> raw::ubdaqSoftwareTriggerData::getListOfAlgorithms(void) const{
   std::vector<std::string> list;
-  for (auto const algoPair: passAlgo){
+  for (auto const & algoPair: passAlgo){
     list.push_back(algoPair.first);
   }
   return list;
