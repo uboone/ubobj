@@ -250,8 +250,8 @@ fwdir	product_dir	scripts
 product		version		qual	flags		<table_format=2>
 artdaq_core	v3_09_11	-
 larcorealg	v09_12_01	-
-lardataalg	v09_16_06	-
-lardataobj	v09_17_01	-
+lardataalg	v09_16_07	-
+lardataobj	v09_17_02	-
 cetmodules	v3_21_01	-	only_for_build
 end_product_list
 ####################################
