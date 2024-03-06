@@ -248,10 +248,10 @@ fwdir	product_dir	scripts
 #
 ####################################
 product		version		qual	flags		<table_format=2>
-artdaq_core	v3_09_11	-
-larcorealg	v09_12_01	-
-lardataalg	v09_16_07	-
-lardataobj	v09_17_02	-
+artdaq_core	v3_10_01	-
+larcorealg	v09_12_02	-
+lardataalg	v09_16_08	-
+lardataobj	v09_17_03	-
 cetmodules	v3_21_01	-	only_for_build
 end_product_list
 ####################################
@@ -308,14 +308,14 @@ end_product_list
 #
 ####################################
 qualifier	lardataobj	larcorealg	artdaq_core	 lardataalg
-c14:debug       c14:debug       c14:debug       c14:debug:s120a  c14:debug
-c14:prof        c14:prof        c14:prof        c14:prof:s120a   c14:prof
-c7:debug	c7:debug	c7:debug	c7:s120a:debug	 c7:debug
-c7:prof		c7:prof		c7:prof		c7:s120a:prof	 c7:prof
-e26:debug       e26:debug       e26:debug       e26:debug:s120a  e26:debug
-e26:prof        e26:prof        e26:prof        e26:prof:s120a   e26:prof
-e20:debug	e20:debug	e20:debug	e20:s120a:debug	 e20:debug
-e20:prof	e20:prof	e20:prof	e20:s120a:prof	 e20:prof
+c14:debug       c14:debug       c14:debug       c14:debug:s120b  c14:debug
+c14:prof        c14:prof        c14:prof        c14:prof:s120b   c14:prof
+c7:debug	c7:debug	c7:debug	c7:s120b:debug	 c7:debug
+c7:prof		c7:prof		c7:prof		c7:s120b:prof	 c7:prof
+e26:debug       e26:debug       e26:debug       e26:debug:s120b  e26:debug
+e26:prof        e26:prof        e26:prof        e26:prof:s120b   e26:prof
+e20:debug	e20:debug	e20:debug	e20:s120b:debug	 e20:debug
+e20:prof	e20:prof	e20:prof	e20:s120b:prof	 e20:prof
 end_qualifier_list
 ####################################
 
