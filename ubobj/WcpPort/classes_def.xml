@@ -27,6 +27,7 @@
 
   <!-- BE aware that the inner struct also to be put here -->
   <class name="nsm::NuSelectionBDT"/>
+  <class name="nsm::NuSelectionBDT::stkdar"/>
   <class name="nsm::NuSelectionBDT::SPID"/>
   <class name="nsm::NuSelectionBDT::SPSHWID1"/>
   <class name="nsm::NuSelectionBDT::SPSHWID2"/>

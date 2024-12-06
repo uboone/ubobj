@@ -5,6 +5,9 @@ using namespace nsm;
 
   NuSelectionBDT::NuSelectionBDT() {
     NuSelectionBDT::SPID _SPID_init = {0};
+
+    NuSelectionBDT::stkdar _stkdar_init = {0};
+
     NuSelectionBDT::SPSHWID1 _SPSHWID1_init = {0};
 	  NuSelectionBDT::SPSHWID2 _SPSHWID2_init = {0};
 	  NuSelectionBDT::SPPi0Tagger1 _SPPi0Tagger1_init = {0};
@@ -44,6 +47,8 @@ using namespace nsm;
 	  NuSelectionBDT::MajorCosmicTagger _MajorCosmicTagger_init = {0};
 	  NuSelectionBDT::NumuCCTagger _NumuCCTagger_init = {0};
 	  NuSelectionBDT::BDTscores _BDTscores_init = {0};
+
+    _stkdar_ = _stkdar_init;
 
     _SPID_ = _SPID_init;
     _SPSHWID1_ = _SPSHWID1_init;
@@ -88,6 +93,9 @@ using namespace nsm;
   }
 
   void NuSelectionBDT::reset(){
+
+    NuSelectionBDT::stkdar _stkdar_init = {0};
+
     NuSelectionBDT::SPID _SPID_init = {0};
     NuSelectionBDT::SPSHWID1 _SPSHWID1_init = {0};
 	  NuSelectionBDT::SPSHWID2 _SPSHWID2_init = {0};
@@ -128,6 +136,8 @@ using namespace nsm;
 	  NuSelectionBDT::MajorCosmicTagger _MajorCosmicTagger_init = {0};
 	  NuSelectionBDT::NumuCCTagger _NumuCCTagger_init = {0};
 	  NuSelectionBDT::BDTscores _BDTscores_init = {0};
+
+    _stkdar_ = _stkdar_init;
 
     _SPID_ = _SPID_init;
     _SPSHWID1_ = _SPSHWID1_init;
@@ -171,6 +181,8 @@ using namespace nsm;
 	  _BDTscores_ = _BDTscores_init;
   }
 
+  void NuSelectionBDT::Setstkdar(NuSelectionBDT::stkdar BDT_input){ this->_stkdar_=BDT_input; }
+
   void NuSelectionBDT::SetSPID(NuSelectionBDT::SPID BDT_input){ this->_SPID_=BDT_input; }
   void NuSelectionBDT::SetSPSHWID1(NuSelectionBDT::SPSHWID1 BDT_input){ this->_SPSHWID1_=BDT_input; }
   void NuSelectionBDT::SetSPSHWID2(NuSelectionBDT::SPSHWID2 BDT_input){ this->_SPSHWID2_=BDT_input; }
@@ -211,6 +223,8 @@ using namespace nsm;
   void NuSelectionBDT::SetMajorCosmicTagger(NuSelectionBDT::MajorCosmicTagger BDT_input){ this->_MajorCosmicTagger_=BDT_input; }
   void NuSelectionBDT::SetNumuCCTagger(NuSelectionBDT::NumuCCTagger BDT_input){ this->_NumuCCTagger_=BDT_input; }
   void NuSelectionBDT::SetBDTscores(NuSelectionBDT::BDTscores BDT_input){ this->_BDTscores_=BDT_input; }
+
+  const NuSelectionBDT::stkdar & NuSelectionBDT::Getstkdar() const { return this->_stkdar_; }
 
   const NuSelectionBDT::SPID & NuSelectionBDT::GetSPID() const { return this->_SPID_; }
   const NuSelectionBDT::SPSHWID1 & NuSelectionBDT::GetSPSHWID1() const { return this->_SPSHWID1_; }
