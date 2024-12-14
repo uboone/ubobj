@@ -17,6 +17,8 @@
     _notFC_DC=false;
     _charge=-1.;
     _energy=-1.; 
+    _lm_cluster_length=-1;
+    _image_fail=false;
   }
 
   nsm::NuSelectionContainment::NuSelectionContainment(bool flash_found,
@@ -31,7 +33,9 @@
 						 bool notFC_SP,
 						 bool notFC_DC,
 				     		 float charge,
-				     		 float energy){
+				     		 float energy,
+                                                 float lm_cluster_length,
+						 bool image_fail){
     _flash_found=flash_found;
     _flash_time=flash_time;
     _flash_measPe=flash_measPe;
@@ -45,6 +49,8 @@
     _notFC_DC=notFC_DC;
     _charge=charge;
     _energy=energy; 
+    _lm_cluster_length=lm_cluster_length;
+    _image_fail=image_fail;
   }
 
   void nsm::NuSelectionContainment::SetFlashFound(bool flash_found){ this->_flash_found = flash_found; }
@@ -60,7 +66,9 @@
   void nsm::NuSelectionContainment::SetNotFCDC(bool notFC_DC){ this->_notFC_DC = notFC_DC; }
   void nsm::NuSelectionContainment::SetCharge(float charge){ this->_charge = charge; }
   void nsm::NuSelectionContainment::SetEnergy(float energy){ this->_energy = energy; }
-  
+  void nsm::NuSelectionContainment::SetLength(float lm_cluster_length){ this->_lm_cluster_length = lm_cluster_length; }
+  void nsm::NuSelectionContainment::SetImageFail(bool image_fail){ this->_image_fail = image_fail; }
+
   const bool  & nsm::NuSelectionContainment::GetFlashFound() const { return this->_flash_found; }
   const float & nsm::NuSelectionContainment::GetFlashTime() const { return this->_flash_time; }
   const float & nsm::NuSelectionContainment::GetFlashMeasPe() const { return this->_flash_measPe; }
@@ -74,5 +82,5 @@
   const bool & nsm::NuSelectionContainment::GetNotFCDC() const { return this->_notFC_DC; }
   const float & nsm::NuSelectionContainment::GetCharge() const { return this->_charge; }
   const float & nsm::NuSelectionContainment::GetEnergy() const { return this->_energy; }
-
-
+  const float & nsm::NuSelectionContainment::GetLength() const { return this->_lm_cluster_length; }
+  const bool & nsm::NuSelectionContainment::GetImageFail() const { return this->_image_fail; }

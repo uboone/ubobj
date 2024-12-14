@@ -21,7 +21,9 @@ namespace nsm{
 			   bool notFC_SP,
 			   bool notFC_DC,
 			   float charge,
-			   float energy);
+			   float energy,
+                           float lm_cluster_length,
+			   bool inamge_fail);
 
     void SetFlashFound(bool flash_found);
     void SetFlashTime(float flash_time);
@@ -36,6 +38,8 @@ namespace nsm{
     void SetNotFCDC(bool notFC_DC);
     void SetCharge(float charge);
     void SetEnergy(float energy);
+    void SetLength(float lm_cluster_length);
+    void SetImageFail(bool ImageFail);
 
     const bool & GetFlashFound() const;
     const float & GetFlashTime() const;
@@ -50,6 +54,8 @@ namespace nsm{
     const bool & GetNotFCDC() const;
     const float & GetCharge() const;
     const float & GetEnergy() const;
+    const float & GetLength() const;
+    const bool & GetImageFail() const;
 
   private:
     bool _flash_found;
@@ -65,6 +71,8 @@ namespace nsm{
     bool _notFC_DC;
     float _charge;
     float _energy;
+    float _lm_cluster_length;
+    bool _image_fail;
   };
 }
 

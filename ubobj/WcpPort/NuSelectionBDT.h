@@ -407,6 +407,26 @@ namespace nsm{
   std::vector<float> *ssmsp_containing_shower_id;
   std::vector<float> *ssmsp_containing_shower_ke;
   std::vector<float> *ssmsp_containing_shower_flag;
+    //Kine vars
+  float ssm_kine_reco_Enu; // ssm_kinetic energy  + additional energy ...
+  float ssm_kine_reco_add_energy;  // mass, binding energy ...
+  std::vector<float> *ssm_kine_energy_particle;  // energy of each particle
+  std::vector<int> *ssm_kine_energy_info; // what kind of energy reconstruction?
+  std::vector<int> *ssm_kine_particle_type;
+  std::vector<int> *ssm_kine_energy_included; // included in the neutrino energy calculation?
+  float ssm_kine_pio_mass; // mass
+  int ssm_kine_pio_flag; // 0 not filled, 1, with vertex: CCpio, 2 without vertex: NCpi0
+  float ssm_kine_pio_vtx_dis;
+  float ssm_kine_pio_energy_1;
+  float ssm_kine_pio_theta_1;
+  float ssm_kine_pio_phi_1;
+  float ssm_kine_pio_dis_1;
+  float ssm_kine_pio_energy_2;
+  float ssm_kine_pio_theta_2;
+  float ssm_kine_pio_phi_2;
+  float ssm_kine_pio_dis_2;
+  float ssm_kine_pio_angle;
+  float ssm_numu_cc_flag;
   };
   void Setstkdar(stkdar);
   const stkdar & Getstkdar() const;
