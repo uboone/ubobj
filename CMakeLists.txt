@@ -1,32 +1,15 @@
 # ======================================================================
-#  larsoft main build file
+#  ubobj main build file
 #
 #  cd .../path/to/build/directory
-#  source .../path/to/larsoft/ups/setup_for_development <-d|-p>
-#  cmake [-DCMAKE_INSTALL_PREFIX=/install/path]
-#        -DCMAKE_BUILD_TYPE=$CETPKG_TYPE
-#        $CETPKG_SOURCE
-#  make
-#  make test
-#  make install
-#  make package (builds distribution tarfile)
+#  source .../path/to/lardataobj/ups/setup_for_development <-d|-p>
+#  buildtool [-I /install/path] -bt[i] -jN
 # ======================================================================
 
-# use cmake 2.8 or later
-cmake_minimum_required (VERSION 2.8)
+cmake_minimum_required(VERSION 3.20 FATAL_ERROR)
 
-project(ubobj)
-
-# cetbuildtools contains our cmake modules
-SET ( CETBUILDTOOLS_VERSION $ENV{CETBUILDTOOLS_VERSION} )
-IF (NOT CETBUILDTOOLS_VERSION)
-    MESSAGE (FATAL_ERROR "ERROR: setup cetbuildtools to get the cmake modules")
-ENDIF()
-
-
-set(CMAKE_MODULE_PATH $ENV{CANVAS_ROOT_IO_DIR}/Modules
-		      $ENV{CETBUILDTOOLS_DIR}/Modules
-		      ${CMAKE_MODULE_PATH})
+find_package(cetmodules REQUIRED)
+project(ubobj VERSION 10.01.03 LANGUAGES CXX)
 
 include(CetCMakeEnv)
 cet_cmake_env()
@@ -34,32 +17,21 @@ cet_cmake_env()
 cet_set_compiler_flags(DIAGS CAUTIOUS
   WERROR
   NO_UNDEFINED
-  ALLOW_DEPRECATIONS
   EXTRA_FLAGS -pedantic -Wno-unused-local-typedefs
 )
 
-cet_report_compiler_flags()
+cet_report_compiler_flags(REPORT_THRESHOLD VERBOSE)
 
-# these are minimum required versions, not the actual product versions
-find_ups_product( larcorealg )
-find_ups_product( larcoreobj )
-find_ups_product( lardataobj )
-find_ups_product( lardataalg )
-find_ups_product( cetbuildtools )
-find_ups_boost( v1_53_0 )
-find_ups_product( canvas )
-find_ups_product( artdaq_core v1_00_00 )
-find_ups_product( nusimdata )
+find_package(lardataobj REQUIRED EXPORT)
 
 # macros for dictionary and simple_plugin
 include(ArtDictionary)
-include(CetMake)
+include(ArtMake)
 
-# ADD SOURCE CODE SUBDIRECTORIES HERE
+# sources
 add_subdirectory(ubobj)
 
 # ups - table and config files
-add_subdirectory(ups)
 
 # packaging utility
-include(UseCPack)
+cet_cmake_config()

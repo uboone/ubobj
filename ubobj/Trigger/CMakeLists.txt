@@ -1,11 +1,11 @@
-# for classes_def.xml!!
-
-cet_make( LIBRARIES ${ROOT_BASIC_LIB_LIST}
-	  	    ${ROOT_EG}
-		    NO_DICTIONARY
+cet_make_library(
+  SOURCE
+  ubdaqSoftwareTriggerData.cpp
 )
 
-art_dictionary( DICTIONARY_LIBRARIES ubobj_Trigger )
+art_dictionary(
+  DICTIONARY_LIBRARIES ubobj::Trigger
+)
 
 install_headers()
 install_fhicl()

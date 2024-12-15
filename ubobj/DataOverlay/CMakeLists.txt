@@ -1,13 +1,12 @@
-# for classes_def.xml!!
-include_directories( ${CMAKE_CURRENT_SOURCE_DIR} )
-include_directories( $ENV{NUTOOLS_INC} )
+cet_make_library(
+  SOURCE
+  EventMixingSummary.cxx
+  LIBRARIES
+  PUBLIC
+  canvas::canvas
+)
 
-cet_make( LIBRARIES ${ROOT_BASIC_LIB_LIST}
-	  	    ${ROOT_EG}
-		    NO_DICTIONARY
-        )
-
-art_dictionary( DICTIONARY_LIBRARIES ubobj_DataOverlay )
+art_dictionary()
 
 install_headers()
 install_fhicl()

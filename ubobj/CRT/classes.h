@@ -24,7 +24,7 @@
 ////#include "MSetCRTFrag.hh"
 #include <utility>
 #include <vector>
-#include <artdaq-core/Data/Fragment.hh>
+//#include <artdaq-core/Data/Fragment.hh>
 #include <map>
 
 //
@@ -32,20 +32,10 @@
 // Do not include the objects they contain internally.
 //
 
-template class std::vector<crt::CRTSimData>;
-template class art::Wrapper< std::vector<crt::CRTSimData> >;
 
-template class std::vector< std::pair<int,float> >;
-template class std::map< unsigned char, std::vector< std::pair<int,float> > >;
 
-template class std::vector<crt::CRTHit>;
-template class art::Wrapper< std::vector<crt::CRTHit> >;
 
-template class std::vector<crt::CRTTzero>;
-template class art::Wrapper< std::vector<crt::CRTTzero> >;
 
-template class std::vector<crt::CRTTrack>;
-template class art::Wrapper< std::vector<crt::CRTTrack> >;
 
 //template class std::vector< anab::T0 >;
 //template class art::Wrapper< std::vector< anab::T0 >  >;

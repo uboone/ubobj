@@ -1,15 +1,14 @@
-# for classes_def.xml!!
-include_directories( ${CMAKE_CURRENT_SOURCE_DIR} )
-include_directories( $ENV{NUTOOLS_INC} )
+cet_make_library(
+  SOURCE
+  CRTHit.cc
+  CRTTrack.cc
+)
 
-
-cet_make( LIBRARIES lardataobj_AnalysisBase
-	  	    ${ROOT_BASIC_LIB_LIST}
-	  	    ${ROOT_EG}
-		    NO_DICTIONARY
-        )
-
-art_dictionary( DICTIONARY_LIBRARIES ubobj_CRT )
+art_dictionary(
+  DICTIONARY_LIBRARIES
+  lardataobj::RecoBase
+  nusimdata::SimulationBase
+)
 
 install_headers()
 install_fhicl()

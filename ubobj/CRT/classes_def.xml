@@ -101,6 +101,17 @@
 <class name="art::Wrapper< art::Assns<recob::Track,crt::CRTTzero, void> >"           />
 
 
+<class name="art::Assns<recob::Track,crt::CRTHit,    void>"           />
+<class name="art::Wrapper< art::Assns<recob::Track,crt::CRTHit,    void> >"           />
+
+<class name="art::Assns<crt::CRTHit,recob::Track,    void>"           />
+<class name="art::Wrapper< art::Assns<crt::CRTHit,recob::Track,    void> >"           />
+
+<class name="art::Assns<recob::Track,crt::CRTTzero,    void>"           />
+<class name="art::Wrapper< art::Assns<recob::Track,crt::CRTTzero,    void> >"           />
+
+<class name="art::Assns<crt::CRTTzero,recob::Track,    void>"           />
+<class name="art::Wrapper< art::Assns<crt::CRTTzero,recob::Track,    void> >"           />
 
 <!--
   <class name="crt::MSetCRTFrag" ClassVersion="11">
