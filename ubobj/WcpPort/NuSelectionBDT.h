@@ -427,6 +427,17 @@ namespace nsm{
   float ssm_kine_pio_dis_2;
   float ssm_kine_pio_angle;
   float ssm_numu_cc_flag;
+  float ssm_cosmict_flag_1; // fiducial volume vertex
+  float ssm_cosmict_flag_2;  // single muon
+  float ssm_cosmict_flag_3;  // single muon (long)
+  float ssm_cosmict_flag_4;  // kinematics muon
+  float ssm_cosmict_flag_5; // kinematics muon (long)
+  float ssm_cosmict_flag_6; // special ...
+  float ssm_cosmict_flag_7;  // muon+ michel
+  float ssm_cosmict_flag_8;  // muon + michel + special
+  float ssm_cosmict_flag_9;  // this tagger is relevant for nueCC, see "cosmic tagger ones, one case of cosmics ..." (frist one ...)
+  std::vector<float> *ssm_cosmict_flag_10;  // front upstream (dirt)
+  float ssm_cosmict_flag;
   };
   void Setstkdar(stkdar);
   const stkdar & Getstkdar() const;
