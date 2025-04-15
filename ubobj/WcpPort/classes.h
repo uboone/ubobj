@@ -16,4 +16,18 @@
 // for kinetic variables
 #include "ubobj/WcpPort/NuSelectionKINE.h"
 
+// Space points.
+#include "ubobj/WcpPort/SpacePointStructs.h"
+
 #include <vector>
+
+//
+// Only include objects that we would like to be able to put into the event.
+// Do not include the objects they contain internally.
+//
+
+// Change the template declaration
+template class art::Wrapper<std::vector<TrecSpacePoint>>;
+template class art::Wrapper<std::vector<TrecchargeSpacePoint>>;
+template class art::Wrapper<std::vector<TrecchargeblobSpacePoint>>;
+template class art::Wrapper<std::vector<TclusterSpacePoint>>;
