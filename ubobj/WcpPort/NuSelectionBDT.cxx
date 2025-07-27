@@ -48,8 +48,6 @@ using namespace nsm;
 	  NuSelectionBDT::NumuCCTagger _NumuCCTagger_init = {0};
 	  NuSelectionBDT::BDTscores _BDTscores_init = {0};
 
-	  NuSelectionBDT::WCPMTInfo _WCPMTInfo_init = {0};
-
     _stkdar_ = _stkdar_init;
 
     _SPID_ = _SPID_init;
@@ -92,8 +90,6 @@ using namespace nsm;
 	  _MajorCosmicTagger_ = _MajorCosmicTagger_init;
 	  _NumuCCTagger_ = _NumuCCTagger_init;
 	  _BDTscores_ = _BDTscores_init;
-
-	_WCPMTInfo_ = _WCPMTInfo_init;
   }
 
   void NuSelectionBDT::reset(){
@@ -141,8 +137,6 @@ using namespace nsm;
 	  NuSelectionBDT::NumuCCTagger _NumuCCTagger_init = {0};
 	  NuSelectionBDT::BDTscores _BDTscores_init = {0};
 
-	  NuSelectionBDT::WCPMTInfo _WCPMTInfo_init = {0};
-
     _stkdar_ = _stkdar_init;
 
     _SPID_ = _SPID_init;
@@ -185,8 +179,6 @@ using namespace nsm;
 	  _MajorCosmicTagger_ = _MajorCosmicTagger_init;
 	  _NumuCCTagger_ = _NumuCCTagger_init;
 	  _BDTscores_ = _BDTscores_init;
-
-	  _WCPMTInfo_ = _WCPMTInfo_init;
   }
 
   void NuSelectionBDT::Setstkdar(NuSelectionBDT::stkdar BDT_input){ this->_stkdar_=BDT_input; }
@@ -232,7 +224,7 @@ using namespace nsm;
   void NuSelectionBDT::SetNumuCCTagger(NuSelectionBDT::NumuCCTagger BDT_input){ this->_NumuCCTagger_=BDT_input; }
   void NuSelectionBDT::SetBDTscores(NuSelectionBDT::BDTscores BDT_input){ this->_BDTscores_=BDT_input; }
 
-  void NuSelectionBDT::SetWCPMTInfo(NuSelectionBDT::WCPMTInfo BDT_input){ this->_WCPMTInfo_=BDT_input; }
+
 
   const NuSelectionBDT::stkdar & NuSelectionBDT::Getstkdar() const { return this->_stkdar_; }
 
@@ -277,4 +269,4 @@ using namespace nsm;
   const NuSelectionBDT::NumuCCTagger & NuSelectionBDT::GetNumuCCTagger() const { return this->_NumuCCTagger_; }
   const NuSelectionBDT::BDTscores & NuSelectionBDT::GetBDTscores() const { return this->_BDTscores_; }
 
-  const NuSelectionBDT::WCPMTInfo & NuSelectionBDT::GetWCPMTInfo() const { return this->_WCPMTInfo_; }
+

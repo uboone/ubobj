@@ -442,24 +442,6 @@ namespace nsm{
   void Setstkdar(stkdar);
   const stkdar & Getstkdar() const;
 
-struct WCPMTInfo{
-	std::vector<double> *WCPMTInfoPePred;
-	std::vector<double> *WCPMTInfoPeMeas;
-	std::vector<double> *WCPMTInfoPeMeasErr;
-	int WCPMTInfoTPCClusterID;
-	int WCPMTInfoFlashID;
-	double WCPMTInfoStrength;
-	int WCPMTInfoEventType;
-	double WCPMTInfoKSDistance;
-	double WCPMTInfoChi2;
-	int WCPMTInfoNDF;
-	double WCPMTInfoClusterLength;
-	int WCPMTInfoNeutrinoType;
-	double WCPMTInfoFlashTime;
-};
-void SetWCPMTInfo(WCPMTInfo);
-const WCPMTInfo & GetWCPMTInfo() const;
-
 
 struct SPID{
     float shw_sp_num_mip_tracks;
@@ -1608,7 +1590,6 @@ struct SPID{
 	MajorCosmicTagger _MajorCosmicTagger_;
 	NumuCCTagger _NumuCCTagger_;
 	BDTscores _BDTscores_;
-	WCPMTInfo _WCPMTInfo_;
   };
 }
 
