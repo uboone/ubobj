@@ -67,9 +67,14 @@
   <class name="nsm::NuSelectionBDT::MajorCosmicTagger"/>
   <class name="nsm::NuSelectionBDT::NumuCCTagger"/>
   <class name="nsm::NuSelectionBDT::BDTscores"/>
+  <class name="nsm::WCPMTInfo"/>
+  <class name="std::vector<nsm::WCPMTInfo>"/>
+  <class name="art::Wrapper<std::vector<nsm::WCPMTInfo>>"/>
   <class name="art::Wrapper<nsm::NuSelectionBDT>"/>
   <class name="std::vector<nsm::NuSelectionBDT>"/>
   <class name="art::Wrapper<std::vector<nsm::NuSelectionBDT>>"/>
+
+
   
   <class name="nsm::NuSelectionKINE"/>
   <class name="nsm::NuSelectionKINE::KineInfo"/>

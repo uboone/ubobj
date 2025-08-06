@@ -224,6 +224,8 @@ using namespace nsm;
   void NuSelectionBDT::SetNumuCCTagger(NuSelectionBDT::NumuCCTagger BDT_input){ this->_NumuCCTagger_=BDT_input; }
   void NuSelectionBDT::SetBDTscores(NuSelectionBDT::BDTscores BDT_input){ this->_BDTscores_=BDT_input; }
 
+
+
   const NuSelectionBDT::stkdar & NuSelectionBDT::Getstkdar() const { return this->_stkdar_; }
 
   const NuSelectionBDT::SPID & NuSelectionBDT::GetSPID() const { return this->_SPID_; }
@@ -266,3 +268,5 @@ using namespace nsm;
   const NuSelectionBDT::MajorCosmicTagger & NuSelectionBDT::GetMajorCosmicTagger() const { return this->_MajorCosmicTagger_; }
   const NuSelectionBDT::NumuCCTagger & NuSelectionBDT::GetNumuCCTagger() const { return this->_NumuCCTagger_; }
   const NuSelectionBDT::BDTscores & NuSelectionBDT::GetBDTscores() const { return this->_BDTscores_; }
+
+

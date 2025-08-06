@@ -13,6 +13,9 @@
 // for BDT input variables
 #include "ubobj/WcpPort/NuSelectionBDT.h"
 
+// for WCPMTInfo
+#include "ubobj/WcpPort/WCPMTInfo.h"
+
 // for kinetic variables
 #include "ubobj/WcpPort/NuSelectionKINE.h"
 
